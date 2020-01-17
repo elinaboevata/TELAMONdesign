@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="bg">Почетен надпис за император М. Юлий Филип, Отацилия Севера, римския народ и императорското семейство</title><!-- Заглавие -->
+                <title xml:lang="en">Honorary inscription for emperor M. Iulius Philippus, Otacilia Severa, SPQR and the emperor's family</title>
+                <editor>
+                    <persName xml:lang="bg">Георги Михайлов</persName>
+                    <persName xml:lang="en">Georgi Mihailov</persName>
+                </editor>                 
+            </titleStmt>            
+            <publicationStmt>
+                <authority>Telamon Project</authority>
+                <date>2018</date>
+                <idno type="filename">III.911</idno><!-- номер на надписа -->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc xml:id="fr1">
+                    <msIdentifier><country/> 
+                        <altIdentifier  xml:lang="bg">
+                            <repository></repository><!-- Институция -->
+                            <idno>—</idno><!-- Инвентарен номер -->
+                        </altIdentifier>
+                        <altIdentifier xml:lang="en">
+                            <repository></repository>
+                            <idno>—</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents><!-- Жанр на надписа -->
+                        <summary corresp="document-type.xml#doc2-1p"><!-- добави в @corresp след # съответното id от document-type.xml -->
+                            <seg xml:lang="bg">почетен надпис за императори - проза</seg><!-- с думи -->
+                            <seg xml:lang="en">honorary inscription for emperors - prose</seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material xml:lang="bg" ref="material.xml#m">мрамор</material><!-- добави в @ref след # съответното id от material.xml; съдържание на елемента - с думи -->  
+                                    <material xml:lang="en">marble</material>
+                                    <objectType xml:lang="bg" ref="object.xml#sl">плоча</objectType><!-- добави в @ref след # съответното id от object.xml; съдържание на елемента - с думи--> 
+                                    <objectType xml:lang="en">slab</objectType>
+                                    <dimensions> 
+                                        <height quantity="60">60</height>
+                                        <width quantity="65">65</width>
+                                        <depth quantity="8">8</depth>
+                                    </dimensions>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout></layout> <!-- трябва да добавим и специален таг за място на надписа върху обекта, който може и да не се пълни винаги ДИ -->
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <height atMost="2.5">2.5<!-- O MINUS?? --></height><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote>—</decoNote><!-- попълни с описание на декорацията на обекта, ако е налично -->
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="origloc.xml#Phil"><!-- добави в @ref след # съответното id от origloc.xml; съдържание на елемента - с думи -->
+                                <seg xml:lang="bg">Филипопол</seg>
+                                <seg xml:lang="en">Philippopolis</seg>
+                            </origPlace>
+                            <origDate notBefore="0244" notAfter="0249" evidence="reign"><!-- В КОРПУСА ПИШЕ ЗА ВРЕМЕТО НА НЯКАКЪВ ЛЕГАТ, КОЙТО ОБАЧЕ НЕ СЕ СПОМЕНАВА В ТЕКСТА?? --><!-- приема @notBefore заедно с @notAfter, ако имаме датировка по години на управление на император или посочен век (виж бележки как се бележат вековете), както и @when във формат година-месец-дата -->
+                                <seg xml:lang="bg">244 - 249 г. сл.Хр.</seg>
+                                <seg xml:lang="en">244 - 249 AD</seg>
+                            </origDate>
+                        </origin>
+                        <provenance type="found">
+                            <seg xml:lang="bg">
+                                Fr1 намерен в църквата св. Петка в <placeName type="ancientFindspot" ref="findsp.xml#Pl">Пловдив</placeName><!-- добави в @ref след # съответното id от findsp.xml; съдържание на елемента - с думи -->
+                            </seg>
+                            <seg xml:lang="en">
+                                Fr1 is found in the church of st. Petka in<placeName  type="ancientFindspot">Plovdiv</placeName>.
+                            </seg>
+                        </provenance>
+                        <provenance type="observed">
+                            <seg xml:lang="bg">
+                                И двата фрагмента са загубени. Fr1е последно видян в църквата св. Петка в  <placeName>Пловдив</placeName>.<!-- само с думи --> <!-- само с думи ли да остане наистина или да имаме референтен списък на места и тук? ДИ -->
+                            </seg>
+                            <seg xml:lang="en">
+                                Both fragments have dissapeared. Fr1 last seen in st. Petka church in <placeName>Plovdiv</placeName>.
+                            </seg>
+                        </provenance>
+                    </history>
+                </msDesc>
+                <msDesc xml:id="fr2">
+                    <msIdentifier><country/> 
+                        <altIdentifier  xml:lang="bg">
+                            <repository></repository><!-- Институция -->
+                            <idno>—</idno><!-- Инвентарен номер -->
+                        </altIdentifier>
+                        <altIdentifier xml:lang="en">
+                            <repository></repository>
+                            <idno>—</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents><!-- Жанр на надписа -->
+                        <summary corresp="document-type.xml#doc2-1p"><!-- добави в @corresp след # съответното id от document-type.xml -->
+                            <seg xml:lang="bg"></seg><!-- с думи -->
+                            <seg xml:lang="en"></seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material xml:lang="bg" ref="material.xml#m"></material><!-- добави в @ref след # съответното id от material.xml; съдържание на елемента - с думи -->  
+                                    <material xml:lang="en"></material>
+                                    <objectType xml:lang="bg" ref="object.xml#sl"></objectType><!-- добави в @ref след # съответното id от object.xml; съдържание на елемента - с думи--> 
+                                    <objectType xml:lang="en"></objectType>
+                                    <dimensions><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                                        <height quantity="0"></height>
+                                        <width quantity="0"></width>
+                                        <depth quantity="0"></depth>
+                                    </dimensions>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout></layout> <!-- трябва да добавим и специален таг за място на надписа върху обекта, който може и да не се пълни винаги ДИ -->
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <height quantity="0"><!-- O MINUS?? --></height><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote>—</decoNote><!-- попълни с описание на декорацията на обекта, ако е налично -->
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="origloc.xml#Phil"><!-- добави в @ref след # съответното id от origloc.xml; съдържание на елемента - с думи -->
+                                <seg xml:lang="bg">Филипопол</seg>
+                                <seg xml:lang="en">Philippopolis</seg>
+                            </origPlace>
+                            <origDate notBefore="0244" notAfter="0249"><!-- В КОРПУСА ПИШЕ ЗА ВРЕМЕТО НА НЯКАКЪВ ЛЕГАТ, КОЙТО ОБАЧЕ НЕ СЕ СПОМЕНАВА В ТЕКСТА?? --><!-- приема @notBefore заедно с @notAfter, ако имаме датировка по години на управление на император или посочен век (виж бележки как се бележат вековете), както и @when във формат година-месец-дата -->
+                                <seg xml:lang="bg"></seg>
+                                <seg xml:lang="en"></seg>
+                            </origDate>
+                        </origin>
+                        <provenance type="found">
+                            <seg xml:lang="bg">
+                               Fr2 е намерен в еврейското гробище в <placeName type="ancientFindspot" ref="findsp.xml#Pl">Пловдив</placeName><!-- добави в @ref след # съответното id от findsp.xml; съдържание на елемента - с думи -->
+                            </seg>
+                            <seg xml:lang="en">
+                                Fr2 found in the Jewish cemetery in <placeName  type="ancientFindspot">Plovdiv</placeName>
+                            </seg>
+                        </provenance>
+                        <provenance type="observed">
+                            <seg xml:lang="bg">
+                                Fr2 е видян последно в еврейското гробище в <placeName>Пловдив</placeName><!-- само с думи --> <!-- само с думи ли да остане наистина или да имаме референтен списък на места и тук? ДИ -->
+                            </seg>
+                            <seg xml:lang="en">
+                                Fr2 last seen in the Jewish cemetery in <placeName>Plovdiv</placeName>
+                            </seg>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <listPrefixDef>
+                <prefixDef matchPattern="(.+)" replacementPattern="../authority/bibliography.xml#$1" ident="bib"/>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2019-06-20" who="BI">въведох в кода данните от корпуса на Г. Михайлов</change>
+            <change when="2019-06-20" who="EB">corr., suppl., added links НАДПИСЪТ НЕ Е КОРИГИРАН</change><!-- сложи @when с година-месец-ден и @who с инициали; като съдържание сложи описание на свършената от теб работа по надписа -->
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="именаснимка.jpg"/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:lang="grc">
+                <div type="textpart" n="f1">
+                    <ab>
+                    <lb n="1"/><supplied reason="lost"><w>ὑπὲρ</w> <w lemma="νίκη">νίκης</w> <w>καὶ</w> <w lemma="αἰώνιος">αἰωνίου</w></supplied> <w lemma="διαμονή"><supplied reason="lost">διαμ</supplied>ονῆς</w> <g type="dot"/> <w>τῶν</w> <w lemma="θεῖος">θειοτάτων</w> <g type="dot"/> <w lemma="σεβαστός"><expan><abbr>Σεβ</abbr><ex>αστῶν</ex></expan></w> <g type="dot"/>
+                    <lb n="2"/><supplied reason="lost"><persName ref="listemperors.xml#PhilippusI" type="emperor"><name ref="Onom.xml#Marcus" nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name> <name ref="Onom.xml#Iulius" nymRef="Ἰούλιος">Ἰουλίου</name> <name nymRef="Φίλιππος" ref ="Onom.xml#Philippus">Φιλίππου</name></persName> <w>καὶ</w></supplied> <persName ref="listemperors.xml#Otacilia" type="empreror"><name nymRef="Ὠτακιλία" ref="Onom.xml#Otacilia"><supplied reason="lost">Ὠτακιλί</supplied>α̣ς</name> 
+                        <name nymRef="Σεουήρα" ref="Onom.xml#Severa">Σεουήρας</name></persName> <g type="dot"/> <w>καὶ</w> <g type="dot"/> <w lemma="ἱερά">ἱερᾶς</w>                    <lb n="3"/><w lemma="σύγκλητος"><supplied reason="lost">συγκ</supplied><supplied reason="omitted">λ</supplied>ήτ<supplied reason="omitted">ο</supplied>υ</w> <w>κ<supplied reason="omitted">αὶ</supplied></w> 
+                        <w lemma="δῆμος"><supplied reason="omitted">δή</supplied>μου</w> <w>τοῦ</w> 
+                        <w lemma="Ῥωμαῖος">Ῥωμ<supplied reason="omitted">α</supplied>ίων</w> <w>καὶ</w> <w>τοῦ</w> <w lemma="σύμπας">σύμπαντος</w>
+                    <lb n="4"/><supplied reason="lost"><w>τῶν</w> <w lemma="σεβαστός">Σεβαστῶν</w> <w lemma="οἶκος">οἴκου</w></supplied><gap reason="lost" extent="unknown" unit="character"/>
+                    <lb n="5"/><gap reason="lost" extent="unknown" unit="line"/>
+<!-- тук сложи гръцкия текст -->
+                </ab>
+                </div>
+            </div>
+            <div type="apparatus">
+                <listApp >
+                    <head xml:lang="bg">Букви в лигатура:</head><!-- В случай, че има коментари и от друг характер, да се промени съдържанието на елемента или да се добави нов елемент <head> -->
+                    <head xml:lang="en">Letters in ligature:</head>
+                    <app loc="1">                       <!-- стойността на атрибута да се замени със съответния ред, на който се среща лигатурата; елементът да се повтори толкова пъти, колкото реда с лигатури има -->
+                        <note>νησ, των, θε, των;</note>
+                        <rdg></rdg>
+                    </app>
+                    <app loc="2">
+                        <note>ου, ηρ;</note>
+                    </app>
+                    <app loc="3">
+                        <note>ου, μπ, ντ, οσ.</note>
+                    </app>
+                </listApp>
+            </div>
+            <div type="translation">
+                <p>
+                    <seg xml:lang="bg">
+                        Не е наличен.<!-- Съдържание по подразбиране, ако има превод - да се попълни тук -->
+                    </seg>
+                    <seg xml:lang="en">
+                        Not available.
+                    </seg>
+                </p>
+            </div>
+            <div type="commentary">
+                <p>
+                    <seg xml:lang="bg">
+                        Не е наличен.<!-- Съдържание по подразбиране, ако има коментар - да се попълни тук -->
+                    </seg>
+                    <seg xml:lang="en">
+                        Not available.
+                    </seg>
+                </p>
+            </div>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl sameAs="bib:b3_1"/>
+                </listBibl>
+            </div>
+        </body>
+    </text>
+</TEI>

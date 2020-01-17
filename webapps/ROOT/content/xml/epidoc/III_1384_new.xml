@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="bg">Почетен надпис за император Гордиан и жена му Фурия от името на град Филипопол</title><!-- Заглавие -->
+                <title xml:lang="en">Honorary inscription for emperor Gordianus and his wife Furia by the city of Philippopolis</title>
+                <editor>
+                    <persName xml:lang="bg">Георги Михайлов</persName>
+                    <persName xml:lang="en">Georgi Mihailov</persName>
+                </editor> 
+            </titleStmt>            
+            <publicationStmt>
+                <authority>Telamon Project</authority>
+                <date>2019</date>
+                <idno type="filename">III.1384</idno><!-- номер на надписа -->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><country/> 
+                        <altIdentifier  xml:lang="bg">
+                            <repository>Национален археологически институт с музей</repository><!-- Институция -->
+                            <idno>2607</idno><!-- Инвентарен номер -->
+                        </altIdentifier>
+                        <altIdentifier xml:lang="en">
+                            <repository>National Archaeological Institute with Museum</repository>
+                            <idno>2607</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents><!-- Жанр на надписа -->
+                        <summary corresp="document-type.xml#doc2-1p"><!-- добави в @corresp след # съответното id от document-type.xml -->
+                            <seg xml:lang="bg">Почетен надпис за император - проза</seg><!-- с думи -->
+                            <seg xml:lang="en">Honorary inscription for emperor - prose</seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material xml:lang="bg" ref="material.xml#l">варовик</material><!-- добави в @ref след # съответното id от material.xml; съдържание на елемента - с думи -->  
+                                    <material xml:lang="en">limestone</material>
+                                    <objectType xml:lang="bg" ref="object.xml#col ">колона</objectType><!-- добави в @ref след # съответното id от object.xml; съдържание на елемента - с думи--> 
+                                    <objectType xml:lang="en">column</objectType>
+                                    <dimensions><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                                        <height quantity="165">165</height>
+                                        <width quantity="0"></width>
+                                        <depth quantity="0"></depth>
+                                        <dim type="diameter" quantity="38" precision="low">c. 38</dim>
+                                    </dimensions>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout></layout> <!-- трябва да добавим и специален таг за място на надписа върху обекта, който може и да не се пълни винаги ДИ -->
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <height quantity="3">3</height><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote>—</decoNote><!-- попълни с описание на декорацията на обекта, ако е налично -->
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <!-- https://www.geonames.org/728593/orizari.html --><origPlace ref="origloc.xml#"><!-- добави в @ref след # съответното id от origloc.xml; съдържание на елемента - с думи -->
+                                <seg xml:lang="bg"></seg>
+                                <seg xml:lang="en"></seg>
+                            </origPlace>
+                            <origDate atLeast="0241" atMost="0244" evidence="reign"><!-- приема @notBefore заедно с @notAfter, ако имаме датировка по години на управление на император или посочен век (виж бележки как се бележат вековете), както и @when във формат година-месец-дата -->
+                                <seg xml:lang="bg">241 - 244 г. сл.Хр.</seg>
+                                <seg xml:lang="en">241 - 244 AD</seg>
+                            </origDate>
+                        </origin>
+                        <!-- НЕИЗВЕСТНО --><provenance type="found"> 
+                            <seg xml:lang="bg">
+                                <placeName type="ancientFindspot" ref="findsp.xml#Orizare">Оризаре</placeName><!-- добави в @ref след # съответното id от findsp.xml; съдържание на елемента - с думи -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName  type="ancientFindspot">Orizare</placeName>
+                            </seg>
+                        </provenance>
+                        <provenance type="observed">
+                            <seg xml:lang="bg">
+                                <placeName></placeName><!-- само с думи --> <!-- само с думи ли да остане наистина или да имаме референтен списък на места и тук? ДИ -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName></placeName>
+                            </seg>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <listPrefixDef>
+                <prefixDef matchPattern="(.+)" replacementPattern="../authority/bibliography.xml#$1" ident="bib"/>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2019-06-30" who="M.Y.">До средата на текста.</change><!-- сложи @when с година-месец-ден и @who с инициали; като съдържание сложи описание на свършената от теб работа по надписа -->
+            <change when="2019-07-02" who="M.Y.">Довърших текста и попълних лигатурите.</change>
+            <change when="2019-07-04" who="M.Y.">Вписах апарата, преведох текста и написах кратък коментар; преведох на английски написаното, довършвайки надписа.</change>
+            <change when="2019-07-18" who="EB">corrected, added links</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="именаснимка.jpeg"/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:lang="grc">
+                <ab>
+                    <lb n="1"/> <w lemma="ἀγαθός"><unclear>ἀγ</unclear><supplied reason="lost">αθ</supplied>ῆι</w> <w lemma="τύχη">τύχ<supplied reason="lost">ηι</supplied></w>
+                    <!-- ANTONIUS; GORDIANUS НЕ СЕ НАМИРАТ В Onom.xml --><lb n="2"/><w lemma="αὐτοκράτωρ">Α<unclear>ὐ</unclear>τοκράτορι</w> <w lemma="Καῖσαρ">Καίσαρι</w> <persName type="emperor" ref="listemperors.xml#Gordianus">
+                        <name nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>άρκῳ</ex></expan></name> <name nymRef="Ἀντώνιος"><supplied reason="lost">Ἀντω</supplied>
+                    <lb n="3" break="no"/>νίῳ</name> <name nymRef="Γορδιανός">Γορδιανῷ</name></persName> <w lemma="εὐτυχής">Εὐτυχ<supplied reason="omitted">ε</supplied>ῖ</w>
+                    <w lemma="εὐσεβής">Εὐ<unclear>σ</unclear><supplied reason="lost">εβ<supplied reason="omitted">ε</supplied>ῖ</supplied></w>
+                    <lb n="4"/><w lemma="σεβαστός">Σεβαστῷ</w> <w>καὶ</w> <w>τὴν</w> <w lemma="θεοφιλής">θεοφιλεστ<unclear>ά</unclear><supplied reason="lost">την</supplied></w> <w lemma="αὐγοῦστα"><supplied reason="lost">Αὐ</supplied>
+                  <!-- Furia Sabina Tranquillina НЕ СЕ НАМИРА В listPers.xml;Sabinia + Furia НЕ Е В Onom.xml -->  <lb n="5" break="no"/>γοῦσταν</w> 
+                    <w lemma="γυνή">γυναῖκα</w> <w lemma="αὐτός">αὐτοῦ</w> 
+                    <persName type="emperor" ref="listemperors.xml#Tranquillina"><name nymRef="Φούρια" ref="Onom.xml#Furia">Φου<unclear>ρ</unclear><supplied reason="lost">ίαν</supplied></name>
+                  <!-- Sabina Е ИСТИНСКОТО ИМЕ, НО Sabiniana=Σαβεινιανὴ И Tranquillina=Τρανκυλλείνα НЕ СА В Onom.xml -->  <lb n="6"/><name nymRef="Σαβινιανή" ref="Onom.xml#Sabinia">Σαβινιανὴν</name> 
+                        <name nymRef="Τρανκυλλείνα" ref="Onom.xml#Tranquillina">Τρανκυλλείναν</name></persName> <w lemma="ἡγεμονεύω">ἡ<supplied reason="lost">γεμο</supplied>
+                   <lb n="7" break="no"/>νεύοντος</w> <w>τῆς</w> <w lemma="Θρᾷξ">Θρᾳκῶν</w> <w lemma="ἐπαρχεία">ἐπαρχ<supplied reason="omitted">ε</supplied>ί<supplied reason="lost">ας</supplied></w> 
+                    <persName type="official" ref="listemperors.xml#PomponiusMagianus"><name nymRef="Πομπώνιος" ref="Onom.xml#Pomponius"><expan><abbr><supplied reason="lost">Πομ</supplied>
+                    <lb n="8" break="no"/>πονί</abbr><ex>ου</ex></expan></name> <name> <name nymRef="Μαγιανός" ref="Onom.xml#Magianus">Μαγιανοῦ</name></name></persName> <w lemma="πρεσβευτής"><expan><abbr>πρεσβ</abbr><ex>ευτοῦ</ex></expan></w> 
+                    <g type="dot"/> <w lemma="σεβαστός"><expan><abbr>Σεβ</abbr><ex>αστοῦ</ex></expan></w> <g type="dot"/> <w lemma="ἀντιστράτηγος">ἀντι<supplied reason="lost">στρα</supplied>
+                    <lb n="9" break="no"/>τήγου</w> <w>ἡ</w> <w lemma="λαμπρός">λα<choice><corr>μ</corr><sic>ν</sic></choice>προτάτη</w> <w lemma="Θρᾷξ">Θρᾳκῶν</w> <w lemma="μητρόπολις">μητρό
+                    <lb n="10" break="no"/>πολις</w> <placeName ref="listPlaces.xml#Phil">Φιλιππόπολις</placeName>
+                    <lb n="11"/><w lemma="εὐτυχής">εὐτυχῶς</w>
+                </ab>
+            </div>
+            <div type="apparatus">
+                <listApp >
+                    <head xml:lang="bg">Букви в лигатура и трудно разчетени места :</head><!-- В случай, че има коментари и от друг характер, да се промени съдържанието на елемента или да се добави нов елемент <head> -->
+                    <head xml:lang="en">Letters in ligature and difficult text parts :</head>
+                    <app loc="3"><note>νω;</note></app>
+                    <app loc="4"><note>ην;</note></app>
+                    <app loc="6"><note>νην;</note></app>
+                    <app loc="7"><note>νε, ης;</note></app>
+                    <app loc="9"><note>νπ, ων, μη. </note></app>
+                    <app loc="4"> <!-- този апараt добре ли е? Сложих, каквото сметнах за създало затруднения на предишни редактори. -->
+                        <rdg xml:lang="bg">ΚΑΠΗΝΘΕΟΦΙΛ - Виждат Шкорпил, Иречек дава "κα[ὶ τ]ὴν θεοφιλ[εστάτην - -]", Добринка поправя; </rdg>
+                        <rdg xml:lang="en">ΚΑΠΗΝΘΕΟΦΙΛ - Seen by Shkorpil, Jirechek gives "κα[ὶ τ]ὴν θεοφιλ[εστάτην - -] " , Dobrinka corrects; </rdg>
+                    </app>
+                    <app loc="5">
+                        <rdg xml:lang="bg">ΓΟΥΠΑΝ - Кагнат пише, че Милинген е написал грешно, но всъщност е пропуснал текста. Шкорпил дават "ΑὐΓΟΥΠΑΝ", от които Омол (Jean Théophile Homolle) дава "[Αὐ-]||γοῦ(στ)αν" ;</rdg>
+                        <rdg xml:lang="en">ΓΟΥΠΑΝ - Cagnat says that Millingen had written falsely, but actually the latter omitted this text-part, Shkorpil give "ΑὐΓΟΥΠΑΝ", out of who Jean Théophile Homolle gives "[Αὐ-]||γοῦ(στ)αν";</rdg>
+                    </app>
+                    <app loc="7-8">
+                        <rdg xml:lang="bg">ΠΟΝΙΜΑΠΑΝΟΥ- Дават Шкорпил, Десау дава "ΠΟΜΠΟΝΙΑΝΟΥ" или по-скоро "ΠΟΜΠ(ΟΝΙ)ΜΑΓΙΑΝΟΥ", "ΠΟΝΙΜΑΓΙΑΝΟΥ" Такела, Калинка поправя. </rdg>
+                        <rdg xml:lang="en">ΠΟΝΙΜΑΠΑΝΟΥ-  Given by Shkorpil, Dessau gives "ΠΟΜΠΟΝΙΑΝΟΥ" or rather "ΠΟΜΠ(ΟΝΙ)ΜΑΓΙΑΝΟΥ", Tacchella gives "ΠΟΝΙΜΑΓΙΑΝΟΥ", Kalinka corrects.</rdg>
+                    </app>
+                </listApp>
+            </div>
+            <div type="translation">
+                <p>
+                    <seg xml:lang="bg">
+                        На добър час! За Император Цезар Марк Антоний Гордиан, щастлив, благочестив, Август и най-боголюбивата Августа жена му Фурия Сабиния Транквилина, 
+                        когато Помпоний Магиан беше управител на провинция Тракия като пратеник на Августа с пропреторски чин. Най-блестящият полис-майка на Тракия охотно [посвети/ издигна].    
+                    </seg>
+                    <seg xml:lang="en">
+                        Greetings! For Emperor Caesar Marcus Antonius Gordianus Felix Pius Augustus and the most god-loving Augusta, his wife Furia Sabinia Trranquillina,
+                        when Pomponius Magianus was ruler of the province of Thrace as Legatus Augusti pro pretore. The metropolis Philippopolis gladly [raised/ dedicated].  
+                    </seg>
+                </p>
+            </div>
+            <div type="commentary">
+                <p>
+                    <seg xml:lang="bg">
+                    <listApp>
+                        <!-- Litteras freactas, quas Kal. more suo uncis quadratis inclusit, delineatione collata extra uncos posui.--><app><note> Михайлов поставя счупени букви, които Калинка е включвал в квадратни скоби своеволно, извън скобите след като чертежа беше променен. </note></app>
+                        <app><note>Братята Шкорпил погрешно посочват липсващи букви, които следващите успяват да видят на камъка. </note> </app>
+                    </listApp>
+                    </seg>
+                    <seg xml:lang="en">
+                        <app><note>Mihaylov places broken letters, which Kalinka arbitraryly included in square brackets, outside of the brackets after the drawing has been changed.  </note></app>
+                        <app><note> The Shkorpil Brothers falsely give missing letters, which are visible to sequential editors.</note></app>
+                    </seg>
+                </p>
+            </div>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl sameAs="bib:b3_1"/>
+                </listBibl>
+            </div>
+        </body>
+    </text>
+</TEI>

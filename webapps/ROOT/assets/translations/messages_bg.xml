@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Example format for catalogue files. -->
+<catalogue xml:lang="bg">
+  
+  <!-- Home page -->
+  <message key="home-title">Теламон</message>
+  <message key="home-welcome">Антични гръцки надписи от територията на България</message>
+  <message key="home-inscriptions">Надписи</message>
+  <message key="home-inscriptions-info">Списък на надписите, които са кодирани към настоящия момент</message>
+  <message key="home-text"><p>Целта на проект "Теламон", провеждан в рамките на Софийски университет "Св. Климент Охридски", Катедра Класическа филология,
+  е да бъде създанена дигитална библиотека на античните гръцки надписи, открити на територията на България. Техният брой надвишава 3500 надписа, създадени
+  през период от около 1000 години (VI в. пр. Хр. — IV в. сл. Хр. ). Георги Михайлов публикува тези от тях, които са открити до средата на 80-те години в корпуса "Inscriptiones Graecae
+  in Bulgaria repertae".</p>
+  <p>Към настоящия момент фокусът на проекта е върху дигитализирането на надписите от най-забележителните полиси от Римска Тракия - Филипополис и Августа Траяна.
+  Тези надписи са около 1600, 1200 от които са включени в IGBulg. Една трета от тях имат нужда от редакции и корекции, а други 400 не са публикувани или са публикувани в 
+  разпръснати и често недостъпни публикации на български език.</p>
+   <p>По тази причина се надяваме, че създаването на електронна база данни от тези надписи би улеснила изучаването на историята, културата и езика както на българските земи през античността,
+   така и на гръко-римската цивилизация като цяло.</p> 
+  </message>
+
+  <message key="home-conten">
+<div class="large-12 columns spase"><h1>Нашите партнъори</h1>
+    <div class="large-3 columns "><p>Софииски университет</p><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p>  </div>
+     <div class="large-3 columns "><p>Софииски университет</p><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p>  </div>
+    <div class="large-3 columns "><p>Софииски университет</p><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p>  </div>
+     <div class="large-3 columns "><p>Софииски университет</p><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p>  </div>
+</div>
+    <div class="large-12 columns gr spase"><h1>Екип</h1>
+    <div class="large-2 columns "><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p> <p>Пешо петров</p> </div>
+    <div class="large-2 columns "><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p> <p>Пешо петров</p> </div>
+    <div class="large-2 columns "><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p> <p>Пешо петров</p> </div>
+    <div class="large-2 columns "><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p> <p>Пешо петров</p> </div>
+    <div class="large-2 columns "><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p> <p>Пешо петров</p> </div>
+     <div class="large-2 columns "><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p> <p>Пешо петров</p> </div>
+   </div>
+
+   <div class="large-12 columns spase"><h1>Контакти</h1>
+   
+     
+      
+    
+  </div>
+
+  </message>
+  
+  <!-- Menu labels -->
+  <message key="menu-inscriptions">Надписи</message>
+  <message key="menu-indices">Показалци</message>
+  <message key="menu-index-abbreviation">Съкращения</message>
+  <message key="menu-index-fragment">Фрагменти</message>
+  <message key="menu-index-lemma">Леми</message>
+  <message key="menu-index-emperors">Императори</message>
+  <message key="menu-index-divine">Божества</message>
+  <message key="menu-index-localdivine">Местни божества</message>
+  <message key="menu-index-attested">Засвидетелствани лица</message>
+  <message key="menu-index-officials">Длъжностни лица</message>
+  <message key="menu-index-numeral">Числителни имена</message>
+  <message key="menu-index-person_name">Лични имена</message>
+  <message key="menu-index-symbol">Символи</message>
+  <message key="menu-index-word">Думи</message>
+  <message key="menu-search">Търси</message>
+  <message key="menu-admin">Админ</message>
+  
+  <!-- Footer -->
+  <message key="footer-telamon">Проект Теламон, 2018, Софийски университет "Св. Климент Охридски"</message>
+  <message key="footer-license">Лиценз на <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Признание-Некомерсиален 4.0</a></message>
+  
+  <!-- Facets -->
+  <message key="facet-found_provenance">Място на намиране</message>
+  <message key="facet-origin_place">Произход</message>
+  <message key="facet-support_material">Материал</message>
+  <message key="facet-support_object_type">Вид паметник</message>
+  <message key="facet-inscription_category">Жанр на надписа</message>
+  
+  <!-- Inscriptions XSLT-->
+  <message key="epidoc-xslt-iospe-monument">Паметник</message>
+  <message key="epidoc-xslt-iospe-monument-type">Вид паметник</message>
+  <message key="epidoc-xslt-iospe-not-specified">Неизвестно</message>
+  <message key="epidoc-xslt-iospe-material">Материал</message>
+  <message key="epidoc-xslt-iospe-find-place">Място на намиране</message>
+  <message key="epidoc-xslt-iospe-modern-location">Съвременно местонахождение</message>
+  <message key="epidoc-xslt-iospe-dimensions">Размери</message>
+  <message key="epidoc-xslt-iospe-institution-inventory">Институция и инвентарен номер</message>
+  <message key="epidoc-xslt-iospe-letterheights">Размер на буквите</message>
+  <message key="epidoc-xslt-iospe-text">Надпис</message>
+  <message key="epidoc-xslt-iospe-category">Жанр</message>
+  <message key="epidoc-xslt-iospe-date">Датиране</message>
+  <message key="epidoc-xslt-iospe-dating-criteria">Критерии за датиране</message>
+  <message key="epidoc-xslt-iospe-apparatus">Критически апарат</message>
+  <message key="epidoc-xslt-iospe-translation">Превод</message>
+  <message key="epidoc-xslt-iospe-commentary">Коментар</message>
+  <message key="epidoc-xslt-iospe-images">Изображения</message>
+  <message key="epidoc-xslt-inslib-diplomatic">Дипломатическо издание</message>
+  <message key="epidoc-xslt-inslib-edition">Интерпретативно издание</message>
+  <message key="h">вис.</message>
+  <message key="w">шир.</message>
+  <message key="th">дълб.</message>
+  <message key=""></message>
+  <message key=""></message>
+  <message key=""></message>
+  
+  
+</catalogue>

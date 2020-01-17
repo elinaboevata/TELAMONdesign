@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="bg">Граничен камък от Флавий Скелит в село Ягодово</title><!-- Заглавие -->
+                <title xml:lang="en">Boundary marker from Flavius Skeles in Yagodovo village</title>
+                <editor>
+                    <persName xml:lang="bg">Георги Михайлов</persName>
+                    <persName xml:lang="en">Georgi Mihailov</persName>
+                </editor>
+            </titleStmt>            
+            <publicationStmt>
+                <authority>Telamon Project</authority>
+                <date>2019</date>
+                <idno type="filename">III.1401</idno><!-- номер на надписа -->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><country/> <!-- какво слагаме в първия идентификатор и в алт идентификатора? на едното място може би да отиде инв. номер от музея, но на кое? ДИ -->
+                        <altIdentifier  xml:lang="bg">
+                            <repository>Национален археологически институт с музей</repository><!-- Институция -->
+                            <idno>574</idno><!-- Инвентарен номер -->
+                        </altIdentifier>
+                        <altIdentifier xml:lang="en">
+                            <repository>National Archaeological Institue with Museum</repository>
+                            <idno>574</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents><!-- Жанр на надписа -->
+                        <summary corresp="document-type.xml#doc5-3"><!-- добави в @corresp след # съответното id от document-type.xml -->
+                            <seg xml:lang="bg">граница</seg><!-- с думи -->
+                            <seg xml:lang="en">boundary marker</seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                   <material xml:lang="bg" ref="material.xml#"></material><!-- добави в @ref след # съответното id от material.xml; съдържание на елемента - с думи -->  
+                                    <material xml:lang="en"></material>
+                                    <!-- Cippus terminalis formam arae habens -->  <objectType xml:lang="bg" ref="object.xml#">граничен камък</objectType><!-- добави в @ref след # съответното id от object.xml; съдържание на елемента - с думи--> 
+                                    <objectType xml:lang="en">boundary stone</objectType>
+                                    <dimensions><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                                        <height quantity="113">113</height>
+                                        <width quantity="80">80</width>
+                                        <depth quantity="63">63</depth>
+                                    </dimensions>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout></layout> <!-- трябва да добавим и специален таг за място на надписа върху обекта, който може и да не се пълни винаги ДИ -->
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <height quantity="2.5" >2.5</height><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote>
+                                <seg xml:lang="bg">С форма на олтар, украсен с палми върху горните ъгли</seg>
+                                <seg xml:lang="en">In the shape of an altar, decorated with palms in the upper angles</seg>
+                            </decoNote><!-- попълни с описание на декорацията на обекта, ако е налично -->
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <!-- неизвестно --><origPlace ref="origloc.xml#"><!-- добави в @ref след # съответното id от origloc.xml; съдържание на елемента - с думи -->
+                                <seg xml:lang="bg"></seg>
+                                <seg xml:lang="en"></seg>
+                            </origPlace>
+                            <origDate evidence="reign" notBefore="0155" notAfter="0156"><!-- приема @notBefore заедно с @notAfter, ако имаме датировка по години на управление на император или посочен век (виж бележки как се бележат вековете), както и @when във формат година-месец-дата -->
+                                <seg xml:lang="bg">155  г. сл.Хр.</seg>
+                                <seg xml:lang="en">155 AD</seg>
+                            </origDate>
+                        </origin>
+                        <provenance type="found">
+                            <seg xml:lang="bg">
+                                <!-- https://www.geonames.org/725593/yagodovo.html --><placeName type="ancientFindspot" ref="findsp.xml#Iagodovo">Ягодово</placeName><!-- добави в @ref след # съответното id от findsp.xml; съдържание на елемента - с думи -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName  type="ancientFindspot">Yagodovo</placeName>
+                            </seg>
+                        </provenance>
+                        <provenance type="observed">
+                            <seg xml:lang="bg">
+                                <placeName></placeName><!-- само с думи --> <!-- само с думи ли да остане наистина или да имаме референтен списък на места и тук? ДИ -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName></placeName>
+                            </seg>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <listPrefixDef>
+                <prefixDef matchPattern="(.+)" replacementPattern="../authority/bibliography.xml#$1" ident="bib"/>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2019-07-09" who="M.Y.">До вид на паметника; До 4-ти ред.</change>
+            <change when="2019-07-12" who="M.Y.">Почти до края на текста</change>
+            <change when="2019-07-13" who="M.Y.">До края, с изключение на датите.</change>
+            <change when="2019-07-14" who="M.Y.">Довърших и проверих.</change>
+            <change when="2019-07-30" who="E.B.">corrected, added links to authority</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="именаснимка.jpg"/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:lang="grc">
+                <ab><!-- Имена за Onom.xml: Ἁδριανός=Hadrianus, Φλάουϊος= Flavius, Σκέλης= Skeles ; Хадриан, Gaius Iulius Commodus липсват в listemperors.xml; Φλάουϊος
+                    Σκελητος = Flavius Skeletis/Skeles за listPers.xml-->
+                    <lb n="1"/>    <w lemma="ἀγαθός">ἀγαθῆι</w> <w lemma="τύχη"><unclear>τύ</unclear><supplied reason="lost">χηι</supplied></w>
+                    <lb n="2"/><w>ἐπὶ</w> <w lemma="αὐτοκράτωρ">Αὐτοκράτορος</w> <persName type="emperor" ref="listemperors.xml#Antoninus"><name ref="Onom.xml#Titus" nymRef="Τίτος" ><expan><abbr>Τ</abbr><ex>ίτου</ex></expan></name>
+                        <name nymRef="Αἴλιος" ref="Onom.xml#Aelius">Αἰλίου</name> <name nymRef="Ἁδριανός" ref="Onom.xml#Adrianus">Ἁδρι
+                    <lb n="3" break="no"/>ανοῦ</name> <name nymRef="Ἀντωνίνος" ref="Onom.xml#Antoninus">Ἀντων<surplus>ε</surplus>ίνου</name></persName> <w lemma="Καῖσαρ">Καίσαρος</w> <w lemma="σεβαστός"><expan><abbr>Σεβ</abbr><ex>αστοῦ</ex></expan></w>
+                    <lb n="4"/><w lemma="εὐσεβής">Εὐσεβοῦς</w> <w lemma="ἡγεμονεύω">ἡγεμονεύοντος</w> <w>τῆς</w>
+                    <lb n="5"/><placeName type="ethnic">Θρᾳκῶν</placeName> <w lemma="ἐπαρχεία">ἐπαρχείας</w> <persName type="official" ref="listemperors.xml#Orfitianus"><name nymRef="Γαίος" ref="Gaius"><expan><abbr>Γ</abbr><ex>αίου</ex></expan></name> <name nymRef="Ἰούλιος" ref="Iulius">Ἰουλίου</name>
+                    <lb n="6"/><name nymRef="Κόμμοδος" ref="Onom.xml#Commodus">Κο<supplied reason="omitted">μ</supplied>μόδου</name></persName> <w lemma="πρεσβευτής"><expan><abbr>πρεσβ</abbr><ex>ευτοῦ</ex></expan></w> <w lemma="σεβαστός"><expan><abbr>Σεβ</abbr><ex>αστοῦ</ex></expan></w> <w lemma="ἀντιστράτηγος">ἀντιστρα
+                    <lb n="7" break="no"/>τήγου</w> <w lemma="ὅρος">ὅροι</w> <w lemma="χορτοκοπιάω">χορτοκοπίων</w> <w lemma="φυλή">φυλῆς</w>
+                    <lb n="8"/><placeName ref="listPlaces.xml#Rhodope">Ῥοδοπηΐδος</placeName> <w lemma="τίθημι">τεθέντες</w> <w>ὑπὸ</w> <persName type="attested" ref="listPers.xml#AT325"><name nymRef="Φλάουϊος" ref="Onom.xml#Flavius"><expan><abbr>Φλ</abbr><ex>αυίου</ex></expan></name>
+                    <lb n="9"/><name nymRef="Σκελης" ref="Onom.xml#Sceles">Σκελητος</name></persName> <w lemma="κριτής">κριτοῦ</w> <w>καὶ</w> <w lemma="ὁροθέτης">ὁροθέτου</w>
+                    <!-- χορτοκοπίων - имам съмнения -->
+                </ab>
+            </div>
+            <div type="apparatus">
+                <listApp >
+                    <head xml:lang="bg">Букви в лигатура:</head><!-- В случай, че има коментари и от друг характер, да се промени съдържанието на елемента или да се добави нов елемент <head> -->
+                    <head xml:lang="en">Letters in ligature:</head>
+                    <app loc="3"><note>νε;</note></app>
+                    <app loc="4"><note>νε, ντ, ος, τη;</note></app>
+                    <app loc="5"><note>νε;</note></app>
+                    <app loc="6"><note>πρ;</note></app>
+                    <app loc="7"><note>τηγ;</note></app>
+                    <app loc="8"><note>πη, ντε;</note></app>
+                    <app loc="9"><note>ητ.</note></app>
+                </listApp>
+            </div>
+            <div type="translation">
+                 <p>
+                    <seg xml:lang="bg">На добър час! При император Тит Елий Хадриан Антонин Цезар Август Благочестив,
+                        когато Гай Юлий Комод, пратеник на Августа с пропреторски чин , управляваше провинция Тракия,
+                        граници на земеделците от Родопска[та] фила бяха положени от Флавий Скелит , съдия и границопоставител.</seg>
+                    <seg xml:lang="en">Greetings! During emperor Titus Aelius Hadrianus Caesar August Pius,
+                    when Gaius Julius Commodus(, legatus Augusti pro praetore,) was provincial governor,
+                    borders of the land-workers of [the] Rhodope tribe were placed by Flavius Skeles, judge and border-placer.</seg>
+                </p>
+            </div>
+            <div type="commentary">
+                <!-- Михайлов слага в коментар два други надписа, един на латиснки и един на гръцки. Латинският е Annèe èpigraphique 1927, 49; гръцкият е публикуван от други хора. -->
+                <!--  <p>
+                    <seg xml:lang="bg"></seg>
+                    <seg xml:lang="en"></seg>
+                </p> -->
+            </div>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl sameAs="bib:b3_1"/>
+                </listBibl>
+            </div>
+        </body>
+    </text>
+</TEI>

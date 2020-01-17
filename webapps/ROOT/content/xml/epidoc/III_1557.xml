@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="bg">Почетен надпис за Каракала от Аврелий Деметрий Апф, намерен в Августа Траяна</title>
+                <title xml:lang="en">Honorary inscription for Caracalla from Aurelius Demetrius Apphou, found in Augusta Traiana</title>
+                <editor>
+                    <persName xml:lang="bg">Георги Михайлов</persName>
+                    <persName xml:lang="en">Georgi Mihailov</persName>
+                </editor>
+                <editor>
+                    <persName xml:lang="bg">Николай Шаранков</persName>
+                    <persName xml:lang="en">Nikolay Sharankov</persName>
+                </editor> 
+            </titleStmt>            
+            <publicationStmt>
+                <authority>Telamon Project</authority>
+                <date>2018</date>
+                <idno type="filename">III.1557</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><country/>
+                        <altIdentifier  xml:lang="bg">
+                            <repository>Национален археологически институт с музей</repository>
+                            <idno>3577</idno>
+                        </altIdentifier>
+                        <altIdentifier xml:lang="en">
+                            <repository>National Archaeological Institute with Museum</repository>
+                            <idno>3577</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents>
+                        <summary corresp="document-type.xml#doc2-1p">
+                            <seg xml:lang="bg">почетен надпис за император - проза</seg>
+                            <seg xml:lang="en">honorary inscription for emperor - prose</seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material xml:lang="bg" ref="material.xml#l">варовик</material>  
+                                    <material xml:lang="en">limestone</material>
+                                    <objectType xml:lang="bg" ref="object.xml#b">постамент</objectType>
+                                    <objectType xml:lang="en">base</objectType>
+                                    <dimensions>
+                                        <height quantity="180">180</height>
+                                        <width quantity="70">70</width>
+                                        <depth quantity="55">55</depth>
+                                    </dimensions>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout></layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <height atLeast="4.0" atMost="5.0">4 - 5</height>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="origloc.xml#AugTr">
+                                <seg xml:lang="bg">Августа Траяна</seg>
+                                <seg xml:lang="en">Augusta Traiana</seg>
+                            </origPlace>
+                            <origDate notBefore="0196" notAfter="0217" cert="high" evidence="reign">
+                                <seg xml:lang="bg">196 - 217 г. сл. Хр.</seg>
+                                <seg xml:lang="en">196 - 217 AD</seg>
+                            </origDate>
+                        </origin>
+                        <provenance type="found">
+                            <seg xml:lang="bg">
+                                <placeName type="ancientFindspot" ref="findsp.xml#StZ">Стара Загора</placeName>
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName  type="ancientFindspot">Stara Zagora</placeName>
+                            </seg>
+                        </provenance>
+                        <provenance type="observed">
+                            <seg xml:lang="bg">
+                                <placeName></placeName>
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName></placeName>
+                            </seg>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <listPrefixDef>
+                <prefixDef matchPattern="(.+)" replacementPattern="../authority/bibliography.xml#$1" ident="bib"/>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2018-06-09" who="EB">encoded</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="1557.jpg"/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:lang="grc">
+                <ab>
+                    <lb n="1"/><persName type="emperor" ref="listemperors.xml#Caracalla"><name ref="Onom.xml#Antoninus" nymRef="Ἀντωνίνος">Ἀντωνεῖν<supplied reason="lost">ον</supplied></name></persName>. 
+                    <lb n="2"/><w lemma="ἀγαθός">Ἀγαθῆι</w> <w lemma="τύχη">τύχηι</w>.
+                    <lb n="3"/><w>Τὴν</w> <w lemma="ἀνάστασις">ἀνάστασιν</w>
+                    <lb n="4"/> <w lemma="κατά">κατὰ</w> <w lemma="δόγμα">δόγμα</w> <w lemma="βουλή">βου
+                    <lb n="5" break="no"/>λῆς</w> <w lemma="καί">καὶ</w> <w lemma="δῆμος">δήμου</w> <placeName type="ethnic">Τραι
+                    <lb n="6" break="no"/>ανέων</placeName> <w>ἐπὶ</w> <w lemma="συναρχία">συναρχί
+                    <lb n="7" break="no"/>ας</w> <persName ref="listPers.xml#AT013" type="attested"><name ref="Onom.xml#Aurelius" nymRef="Αὐρήλιος"><expan><abbr>Αὐρ</abbr><ex>ηλίου</ex></expan></name> 
+                    <name ref="Onom.xml#Demetrius" nymRef="Δημήτριος">Δημητρίου</name> <name ref="Onom.xml#Apphou" nymRef="Ἄπφου">Απ
+                        <lb n="8" break="no"/>φου</name></persName> <w>καὶ</w> <w lemma="ἐπιμελέομαι">ἐπιμελουμέ
+                        <lb n="9" break="no"/>νου</w> <w>τῆς</w> <w lemma="ἀνάστασις">ἀναστάσε
+                        <lb n="10" break="no"/>ως</w> <w lemma="αὐτός">αὐτοῦ</w> <w lemma="ἐκ">ἐκ</w> <w>τῶν</w> <w>τῆς</w>
+                        <lb n="11"/><w lemma="πόλις">πόλεως</w>.
+                </ab>
+            </div>
+            <div type="apparatus"><listApp>
+                <app>
+                    <note xml:lang="bg">Букви в лигатура:
+                        3. ην;
+                        5. ησ, ημ, τρ;
+                        6. νε, ωνε;
+                        7. δημη, τρ;
+                        8. με;
+                        9. τησ;
+                        10. ωσ, τησ;
+                        11. ως.</note>
+                    <note xml:lang="en">Letters in ligature:
+                    3. ην;
+                    5. ησ, ημ, τρ;
+                    6. νε, ωνε;
+                    7. δημη, τρ;
+                    8. με;
+                    9. τησ;
+                    10. ωσ, τησ;
+                    11. ως.
+                    
+                    </note>
+                    <rdg></rdg>
+                </app>
+            </listApp>
+            </div>
+            <div type="translation">
+                <!-- <p>
+                    <seg xml:lang="bg"></seg>
+                    <seg xml:lang="en"></seg>
+                </p> -->
+            </div>
+            <div type="commentary">
+                <!--  <p>
+                    <seg xml:lang="bg"></seg>
+                    <seg xml:lang="en"></seg>
+                </p> -->
+            </div>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl sameAs="bib:b3_2"/>
+                </listBibl>
+            </div>
+        </body>
+    </text>
+</TEI>

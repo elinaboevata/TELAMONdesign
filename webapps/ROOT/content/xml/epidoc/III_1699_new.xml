@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="bg">Милиарна колона с името на Елагабал от град Августа Траяна</title><!-- Заглавие -->
+                <title xml:lang="en">Milestone with the name of Elagabalus by the city of Augusta Traiana</title>
+                <editor>
+                    <persName xml:lang="bg">Георги Михайлов</persName>
+                    <persName xml:lang="en">Georgi Mihailov</persName>
+                </editor>    
+            </titleStmt>            
+            <publicationStmt>
+                <authority>Telamon Project</authority>
+                <date>2019</date>
+                <idno type="filename">III.1699</idno><!-- номер на надписа -->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><country/> <!-- какво слагаме в първия идентификатор и в алт идентификатора? на едното място може би да отиде инв. номер от музея, но на кое? ДИ -->
+                        <altIdentifier  xml:lang="bg">
+                            <repository>Национален археологически институт с музей</repository><!-- Институция -->
+                            <idno>—</idno><!-- Инвентарен номер -->
+                        </altIdentifier>
+                        <altIdentifier xml:lang="en">
+                            <repository>National Achaeological institue with museum</repository>
+                            <idno>—</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents><!-- Жанр на надписа -->
+                        <summary corresp="document-type.xml#doc5-2"><!-- добави в @corresp след # съответното id от document-type.xml -->
+                            <seg xml:lang="bg">надпис върху милиарна колона</seg><!-- с думи -->
+                            <seg xml:lang="en">milestone inscription</seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material xml:lang="bg" ref="material.xml#l">варовик</material><!-- добави в @ref след # съответното id от material.xml; съдържание на елемента - с думи -->  
+                                    <material xml:lang="en">limestone</material>
+                                    <objectType xml:lang="bg" ref="object.xml#col">колона</objectType><!-- добави в @ref след # съответното id от object.xml; съдържание на елемента - с думи--> 
+                                    <objectType xml:lang="en">column</objectType>
+                                    <dimensions><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                                        <height quantity="110">110</height>
+                                        <width quantity="0"></width>
+                                        <depth quantity="0"></depth>
+                                        <dim type="diameter" quantity="30" cert="low">30</dim>
+                                    </dimensions>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout></layout> <!-- трябва да добавим и специален таг за място на надписа върху обекта, който може и да не се пълни винаги ДИ -->
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <height atLeast="3" atMost="5">3 - 5</height><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote>—</decoNote><!-- попълни с описание на декорацията на обекта, ако е налично -->
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="origloc.xml#"><!-- добави в @ref след # съответното id от origloc.xml; съдържание на елемента - с думи -->
+                                <seg xml:lang="bg"></seg>
+                                <seg xml:lang="en"></seg>
+                            </origPlace>
+                            <origDate quantity="0222" evidence="prosopography reign "><!-- приема @notBefore заедно с @notAfter, ако имаме датировка по години на управление на император или посочен век (виж бележки как се бележат вековете), както и @when във формат година-месец-дата -->
+                                <seg xml:lang="bg">222 г. сл.Хр</seg>
+                                <seg xml:lang="en">222 AD</seg>
+                            </origDate>
+                        </origin>
+                        <provenance type="found">
+                            <seg xml:lang="bg">
+                                <placeName type="ancientFindspot" ref="findsp.xml#ByalIzvor">Бял извор</placeName><!-- добави в @ref след # съответното id от findsp.xml; съдържание на елемента - с думи -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName  type="ancientFindspot">Byal Izvor</placeName>
+                            </seg>
+                        </provenance>
+                        <provenance type="observed">
+                            <seg xml:lang="bg">
+                                <placeName></placeName><!-- само с думи --> <!-- само с думи ли да остане наистина или да имаме референтен списък на места и тук? ДИ -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName></placeName>
+                            </seg>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <listPrefixDef>
+                <prefixDef matchPattern="(.+)" replacementPattern="../authority/bibliography.xml#$1" ident="bib"/>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2019-07-28" who="M.Y.">До началото на текста; До края на текста; До края на надписа.</change>
+            <change when="2019-07" who="M.Y."></change>
+            <change when="2019-08-24" who="E.B.">corrected, added links to authority</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="именаснимка.jpg"/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:lang="grc">
+                <ab><!-- Marcus Aurelius Antoninus Pius (Elagabalus)=Μᾶρκος Αὐρήλιος Ἀντωνίνος,  Prosius Rufinus=Πρωσίας Ῥουφῖνος привнциален управник за listemperors.xml; Πρωσίας, Ῥουφῖνος за Onom.xml; В listemperors.xml има грешка при годините, в които е управлявал Гета (209-211). -->
+                    <lb n="1"/><w lemma="ἀγαθός">ἀγαθῆι</w> <w lemma="τύχη">τύχηι</w>
+                    <lb n="2"/><w lemma="αὐτοκράτωρ"><expan><abbr>Αὐτοκράτο</abbr><ex>ρι</ex></expan></w> <w lemma="Καῖσαρ">Καίσαρι</w>
+                    <lb n="3"/><persName type="emperor" ref="listemperors.xml#Elagabalus"><name nymRef="Μᾶρκος" ref="Onom.xml#Marcus"><expan><abbr><hi rend="supraline">Μ</hi></abbr><ex>ά</ex></expan><expan><abbr><hi rend="supraline">ρ</hi></abbr><ex>κῳ</ex></expan></name>
+                        <name nymRef="Αὐρήλιος" ref="Onom.xml#Aurelius">Αὐρηλίῳ</name> <name nymRef="Ἀντωνίνος" ref="Onom.xml#Antoninus"><del rend="erasure"><unclear>Ἀν</unclear><supplied reason="lost">τωνεί</supplied>
+                    <lb n="4" break="no"/><supplied  reason="lost">νῳ</supplied></del></name></persName> <w lemma="σεβαστός"><del rend="erasure"><supplied reason="lost">Σεβαστ</supplied>ῷ</del></w>
+                    <w lemma="θεός">θεοῦ</w> <persName type="emperor" ref="listemperors.xml#Caracalla"><name nymRef="Ἀντωνίνος" ref="Onom.xml#Antoninus">Ἀν<supplied reason="lost">τωνεί</supplied>
+                    <lb n="5" break="no"/>νου</name></persName> <w lemma="υἱός">ὑῷ</w> <note>sic</note> <w lemma="θεός">θεοῦ</w> <persName type="emperor" ref="listemperors.xml#Severus"><name nymRef="Σεоυήρος" ref="Onom.xml#Severus">Σευήρου</name></persName> <w lemma="ἔγγονος">ἐγγόνῳ</w> 
+                    <lb n="6"/><w>ἡ</w> <placeName ref="listPlaces.xml#AugTr"><w lemma="Τραιανεύς">Τραιανέων</w> <w lemma="πόλις">πόλις</w></placeName> <w lemma="μίλιον">μείλιον</w> 
+                    <lb n="7"/><space quantity="1" unit="line"/>
+                    <lb n="8"/><w><expan><abbr><hi rend="supraline">ἡγ</hi></abbr><ex>εμονεύοντος</ex></expan></w> <w>τῆς</w> <w><expan><abbr><hi rend="supraline">Θρᾳ</hi></abbr><ex>κῶν</ex></expan></w> <w lemma="ἐπαρχεία">ἐπαρχείας</w>
+                    <persName type="official" ref="listemperors.xml#Prosius"><name nymRef="Πρώσειος" ref="Onom.xml#Prosius">Πρωσίου</name> 
+                        <lb n="9"/><name nymRef="Ῥουφῖνος" ref="Onom.xml#Rufinus">Ῥουφείνου</name></persName> <!-- Няма име Prosius по второ склонение в лгпн -->
+                </ab>
+            </div>
+            <div type="apparatus">
+                <listApp >
+                    <head xml:lang="bg">Букви в лигатура и разяснения:</head><!-- В случай, че има коментари и от друг характер, да се промени съдържанието на елемента или да се добави нов елемент <head> -->
+                    <head xml:lang="en">Letters in ligature and clarifications:</head>
+                    <app loc="3"><note>μρ, ρη;</note></app>
+                    <app loc="5"><note> ηρ, νω, ητρ, νε, ωνπο, με;</note></app>
+                    <app loc="6"><note> ητρ, νε, ωνπο, με;</note></app><!-- Михайлов посочва тези лигатури като част от 5-ти ред.-->
+                    <app loc="7"><note> ηγ, της, θρα, ου, ου, ου.</note></app>
+                    <app loc="2"><!-- Струва ми се малко излишно -->
+                        <note xml:lang="bg">ρι - не е написано върху камъка</note>
+                        <note xml:lang="en">ρι - is not iscribed on the stone</note></app>
+                    <app loc="3 4"><!-- Второто име не е означено като изтрито в phi -->
+                        <note xml:lang="bg">Имената на Елагабал и Каракала са били умишлено изтрити (damnatio memoriae)</note>
+                        <note xml:lang="en">The names of Elagabalus and Caracalla have been intentionally deleted (damnatio memoriae)</note></app>
+                    <app loc="5">
+                        <note xml:lang="bg">ωνπο - "ο" вписано в "π" </note>
+                        <note xml:lang="en">ωνπο - "ο" inscribed in "π"</note></app>
+                    <app loc="5"></app>
+                </listApp>
+            </div>
+            <div type="translation">
+                 <p>
+                    <seg xml:lang="bg">На добър час. За император Цезар Марк Аврелий Антонин Август , на божествения Антонин син, на божествения Север внук. 
+                        Полисът на Траян [постави] милиарна колона, когато провинциален управник на провинция Тракия беше Просий Руфин.</seg>
+                     <seg xml:lang="en">Greeting! For Imperator Caesar Marcus Aurelius Antoninus Augustus, son of the god[ly] Antoninus, grandson of the god[ly] Severus. 
+                         The polis of Trajanus [placed] a milestone, when Legatus Augusti pro praetore of the Thracian provinces was Prosius Rufinus.  </seg>
+                </p> 
+            </div>
+            <div type="commentary">
+                  <p>
+                    <seg xml:lang="bg">Ред 5 - Михайлов не е можел да види границите на реда заради положението на камъка.</seg>
+                    <seg xml:lang="en">Line 5 - Mihaylov could not distinguish the margins of the line because of the stone's position. </seg>
+                </p> 
+            </div>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl sameAs="bib:b3_2"/><!-- след префикса bib: стойността на атрибута да се замени със съответната стойност от авторитетния списък bibliography.xml -->
+                </listBibl>
+            </div>
+        </body>
+    </text>
+</TEI>

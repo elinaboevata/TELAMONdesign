@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="bg">Посветителна основа за Комод от Антипатър син на Аполоний</title><!-- Заглавие -->
+                <title xml:lang="en">Dedicatory base for Comodus by Antipatrus son of Apollonius</title>
+                <editor>
+                    <persName xml:lang="bg">Георги Михайлов</persName>
+                    <persName xml:lang="en">Georgi Mihailov</persName>
+                </editor>
+                <editor>
+                    <persName xml:lang="bg">Николай Шаранков</persName>
+                    <persName xml:lang="en">Nikolay Sharankov</persName>
+                </editor> 
+            </titleStmt>            
+            <publicationStmt>
+                <authority>Telamon Project</authority>
+                <date>2019</date>
+                <idno type="filename">III_1552</idno><!-- номер на надписа -->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><country/> 
+                        <altIdentifier  xml:lang="bg">
+                            <repository>Национален архиологически институт с музей</repository><!-- Институция -->
+                            <idno>1172</idno><!-- Инвентарен номер -->
+                        </altIdentifier>
+                        <altIdentifier xml:lang="en">
+                            <repository>National archaeological institute with museum </repository>
+                            <idno>1172</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents><!-- Жанр на надписа -->
+                        <summary corresp="document-type.xml#doc5"><!-- добави в @corresp след # съответното id от document-type.xml -->
+                            <seg xml:lang="bg"> Посветителен напдис за император Комод в проза.</seg><!-- с думи -->
+                            <seg xml:lang="en">Dedicatory inscription for emperor Comodus in prose.</seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material xml:lang="bg" ref="material.xml#l">варовик</material><!-- добави в @ref след # съответното id от material.xml; съдържание на елемента - с думи -->  
+                                    <material xml:lang="en">limestone</material>
+                                    <objectType xml:lang="bg" ref="object.xml#b">постамент</objectType><!-- добави в @ref след # съответното id от object.xml; съдържание на елемента - с думи--> 
+                                    <objectType xml:lang="en">base</objectType>
+                                    <dimensions><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                                        <height quantity="175">175</height>
+                                        <width quantity="75">75</width>
+                                        <depth quantity="62">62</depth>
+                                    </dimensions>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout></layout> <!-- трябва да добавим и специален таг за място на надписа върху обекта, който може и да не се пълни винаги ДИ -->
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <height  atLeast="3" atMost="3.5">3 - 3.5</height>
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote>—</decoNote><!-- попълни с описание на декорацията на обекта, ако е налично -->
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="origloc.xml#AugTr"><!-- добави в @ref след # съответното id от origloc.xml; съдържание на елемента - с думи -->
+                                <seg xml:lang="bg">Августа Траяна</seg>
+                                <seg xml:lang="en">Augusta Traiana</seg>
+                            </origPlace>
+                            <origDate evidence="reign" notBefore="0187" notAfter="0188"><!-- приема @notBefore заедно с @notAfter, ако имаме датировка по години на управление на император или посочен век (виж бележки как се бележат вековете), както и @when във формат година-месец-дата -->
+                                <seg xml:lang="bg">187 г. сл.Хр.</seg>
+                                <seg xml:lang="en">187 AD</seg>
+                            </origDate>
+                        </origin>
+                        <provenance type="found">
+                            <seg xml:lang="bg">
+                                <placeName type="ancientFindspot" ref="findsp.xml#StZ ">Стара Загора</placeName><!-- добави в @ref след # съответното id от findsp.xml; съдържание на елемента - с думи -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName  type="ancientFindspot">Stara Zagora</placeName>
+                            </seg>
+                        </provenance>
+                        <provenance type="observed">
+                            <seg xml:lang="bg">
+                                <placeName></placeName><!-- само с думи --> <!-- само с думи ли да остане наистина или да имаме референтен списък на места и тук? ДИ -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName></placeName>
+                            </seg>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <revisionDesc>
+            <change when="2019-06-01" who="M.Y.">Пренасяне на началото, до настоящия таг на надписа върху новия шаблон.</change><!-- сложи @when с година-месец-ден и @who с инициали; като съдържание сложи описание на свършената от теб работа по надписа -->
+            <change when="2019-06-03" who="M.Y">Императорските имена.</change>
+            <change when="2019-06-04" who="M.Y.">Останалите имена, лигатури и датировка. </change>
+            <change when="2019-06-13" who="M.Y.">Прехвърлих, разпределих и претагирах коментара. </change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="именаснимка.jpeg"/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:lang="grc">
+                <ab>
+                    <lb n="1"/>  <w lemma="ἀγαθός">ἀγαθῆι</w> <w lemma="τύχη">τύχηι</w>
+            <lb n="2"/><w>τὸν</w> <w lemma="θεῖος">θειότατον</w> <w>καὶ</w> <w lemma="μέγας">μέ-
+            <lb n="3" break="no"/>γιστ<unclear>ο</unclear>ν</w> <w lemma="αὐτοκράτωρ">Αὐτοκράτορα</w> <w lemma="Καῖσαρ">Καί-
+            <lb n="4" break="no"/>σα<unclear>ρ</unclear><supplied reason="lost">α</supplied></w> <g type="dot"></g> <persName ref="listemperos.xml#Commodus" type="emperor   "> <name ref="listPers.xml#Μᾶρκος" nymRef="Μᾶρκος"><expan><abbr><hi rend="supraline">Μ</hi></abbr><ex>ᾶρκον</ex></expan></name> 
+                <name ref="listPers.xml#Αὐρήλιος" nymRef="Αὐρήλιος"><expan><abbr>Αὐρήλ</abbr><ex>ιον</ex></expan></name> <g type="dot"></g> <name ref="listPers#Κόμμοδος" nymRef="Κόμμοδος">Κόμμοδον</name>
+            <lb n="5"/><name ref="listPers#Αντωνεῖνος" nymRef="Ἀντωνίνος">Ἀντωνεῖνον</name></persName> <w lemma=" Σεβαστός">Σεβαστὸν</w> 
+            <lb n="6"/><w lemma="Γερμανικός" >Γερμανικὸν</w> <w lemma="Σαρματικός">Σαρμ<unclear>ατικ</unclear><supplied reason="lost">ὸ</supplied>ν</w>
+            <lb n="7"/><w lemma="Βρεταννικὸς">Βρεταννικὸν</w> <w lemma="ἀρχιερεύς">ἀρχιερέα</w> <g type="leaf"></g>
+            <lb n="8"/><w lemma="μέγας">μέγιστον</w> <g type="dot"></g> <w lemma="δημαρχικός"><expan><abbr>δημ</abbr><ex>αρχικῆς</ex></expan></w> <g type="dot"></g> 
+                    <w lemma="ἐξουσία"><expan><abbr>ἐξ</abbr><ex>ουσίας</ex></expan></w> <g type="dot"></g> <w>τὸ</w> <g type="dot"></g> <num value="12"><hi rend="supraline">ιβ</hi></num> <w lemma="αὐτοκράτωρ">αὐτο-
+            <lb n="9" break="no"/>κράτορα</w> <w>τὸ</w> <num value="10">ιʹ</num> <g type="dot"></g> <w lemma="ὕπατος">ὕπατον</w> <w>τὸ</w> <num value="5">εʹ</num>
+            <lb n="10"/><w lemma="πατήρ"><expan><abbr><hi rend="supraline">π</hi></abbr><ex>ατέρα</ex></expan></w> <g type="dot"></g> <w lemma="πατρίς"><expan><abbr><hi rend="supraline">π</hi></abbr><ex>ατρίδος</ex></expan></w> <g type="dot"></g>
+                    <w lemma="ἡγεμονεύω">ἡγεμ<hi rend="superscript">ο</hi>νεύοντος</w> <w>τῆς</w> <w lemma="Θρᾷξ"><expan><abbr>Θρᾳ</abbr><ex>κῶν</ex></expan></w>
+            <lb n="11"/><w lemma="ἐπαρχεία">ἐπαρχείας</w> <g type="dot"></g> <persName ref="listemperors.xml#Caecilius" type="official"><name ref="Onom.xml#Caecilius" nymRef="Καικίλιος"><expan><abbr>Καικ</abbr><ex>ιλίου</ex></expan></name> <g type="dot"></g> <name ref="Onom.xml#Maternus" nymRef="Ματέρνος">Ματέρνου</name></persName>
+            <lb n="12"/><w lemma="πρεσβευτής"><expan><abbr>πρεσβ</abbr><ex>ευτοῦ</ex></expan></w> <g type="dot"></g> <w lemma="σεβαστός"><expan><abbr>Σεβ</abbr><ex>αστοῦ</ex></expan></w> <g type="dot"></g> 
+                    <w lemma="ἀντιστράτηγος">ἀντιστρατήγου</w>
+            <lb n="13"/><persName ref="listPers.xml#AT002" type="attested"><name nymRef="Ἀντίπατρος" ref="Onom.xml#Antipatrus">Ἀντίπατρος </name><name type="patronym" ref="Onom.xml#Apollonius" nymRef="Ἀπολλώνιος">Ἀπολλωνίου</name></persName>
+            <lb n="14"/><w>τοῦ</w> <w lemma="ἀρχιερεύς">ἀρχιερέως</w> <g type="dot"></g> <num type="cardinal" value="2">βʹ</num> <g type="dot"></g> <w>κατὰ</w><w lemma="ὑπόσχεσις"> ὑπό-
+            <lb n="15" break="no"/>σχεσιν</w> <w>τοῦ</w> <w lemma="πατήρ">πατρὸς</w> <w>ἐκ</w> <w>τῶν</w> <w lemma="ἴδιος">ἰδί-
+            <lb n="16" break="no"/>ων</w> <w lemma="ποιέω">ποιήσας</w> <w lemma="ἀνίστημι">ἀνέστησεν</w>
+                </ab>
+            </div>
+            <div type="apparatus">
+                <listApp >
+                    <head xml:lang="bg">Датировка и букви в лигатура:</head><!-- В случай, че има коментари и от друг характер, да се промени съдържанието на елемента или да се добави нов елемент <head> -->
+                    <head xml:lang="en">Dating and letters in ligature:</head>
+                    <app xml:lang="bg"><note>Посветено на Комод през 187 г. сл. Хр. , когато Цецилий Матерн е бил легат на Августа с пропреторски чин в провинция Тракия. Власт на народен трибун 12 г. от 10.12.186 до  9.12.187 г.сл.Хр. , консул 5 г. от 186 до 189 г.сл.Хр. 
+                        , но император 10г. не е бил, император 8 г. през 186 е последното приветстване.</note> </app>
+                    <app xml:lang="en"><note>Dedicated to Comodus in 187 AD, when Caecilius Maternus had been legatus Augusti pro praetore in the province of Thrace. Trubinitia potestatis year 12  from 10.12.186 to 09.12.187 AD, consul year 5  from 186 to 189 AD,
+                        but he had never been emperor year 10 , year 8 in 186 is the last year of acclamation. </note></app>
+                    <app loc="2"><note>νκ, με; </note></app>  
+                    <app loc="4"><note>ρη, μμ;</note></app> 
+                    <app loc="5"><note>ντ, νε;</note></app> 
+                    <app loc="7"><note>νν;</note></app> 
+                    <app loc="8"><note>με, ημ;</note></app> 
+                    <app loc="10"><note>μνε (superscript "ο"), ντ, της;</note></app> 
+                    <app loc="11"><note>τε, ου;</note></app> 
+                    <app loc="12"><note>πρ, τηγ;</note></app> 
+                    <app loc="13"><note>ντ;</note></app> 
+                    <app loc="14"><note>ου;</note></app> 
+                    <app loc="15"><note>ντ;</note></app> 
+                    <app loc="16"><note>νπ, ης, νε, τη.</note></app> <!-- стойността на атрибута да се замени със съответния ред, на който се среща лигатурата; елементът да се повтори толкова пъти, колкото реда с лигатури има --> 
+                    <app loc="7">
+                        <rdg  xml:lang="bg"> Иречек определя написаното като сгрешено предлагайки  "Βρηταννικὸν". </rdg>
+                        <rdg xml:lang="en"> Jirechek states that there is a mistake and suggests 'Βρηταννικὸν'.  </rdg>
+                    </app>
+                </listApp> 
+                
+            </div>
+            <div type="translation">
+                <p>
+                    <seg xml:lang="bg">
+                            На добър час, за най-божествения и най-могъщ Император Цезар Марк Аврелий Комод Антонин Август Германик Британик Сарматик  най-голям първожрец ,
+                            власт на народен трибун 12 години, император 10, консул 5, отец на отечеството (Acc.) , когато Цецилий Матерн (Gen.) управляваше провинцията на Траките като пратеник на Августа с ранг пропретор
+                            Антипатър(Nom.) син на Аполоний, първожрец 2 години, съобразно обещание на баща си  след като направи със собствени средства и издигна.
+                        <!-- превод -->
+                    </seg>
+                    <seg xml:lang="en">
+                         Greetings! For the most divine and mighty Emperor Caesar Marcus Aurelius Commodus Antoninus Augustus Britanicus Germanicus Sarmaticus, chief-priest
+                            with the greatest tribunician authority for 12 years, emperor for 10, consul for 5, father of the fatherland (Acc.) , 
+                            when Caecilius Maternus governed the province of the Tracians as legate of the August with the authority of a propretor (Gen.)
+                            Antipatrus (Nom) son of Apollonius, chief-priest for 2 years, according to a promise of his father set up, after he made on personal expenses.  
+                    </seg>
+                </p>
+            </div>
+            <div type="commentary">
+                <p>
+                    <seg xml:lang="bg">
+                        <app loc="4"><note xml:lang="bg" n="1">-σαρα [предложено от] Пападопулос, ΣΑ/// [видяно от] Фукар, ΣΑΡ/// [от] Иречек.</note></app>
+                       <app loc="4;5"> <note xml:lang="bg" n="2">Αὐρήλ(ιον), 4-ти ред, и Ἀντωνεῖνον , 5-ти ред, Фукар първи предоставя правилно. </note></app>
+                        <app loc="6"><note xml:lang="bg" n="3">ΣΑΡΜ [видяно от] Иречек, ΣΑΡΜ<gap reason="illegible" quantity="4" unit="character"></gap> Ν [видяно от] Фукар, Михайлов видял ΣΑΡ<unclear>ΜΑ</unclear>.</note></app>
+                        <app loc="7"><note xml:lang="bg" n="4">Имало е листо накрая след ΑΡΧΙΕΡΕΑ, което са видяли Иречек и Фукар, но Михайлов вижда ΑΡΧΙΕΡΙ/// .</note></app>
+                        <app loc="8"><note xml:lang="bg" n="5">Иречек предлага δημ(οτικῆς), което от Алберт Дюмонт е поправено. </note></app>
+                       <app loc="8"> <note xml:lang="bg" n="6">Всички разчитат "τὸ ιβʹ", освен  Иречек, който дава "τόν β", и Кубичек , който смята, че чертежа на Калинка също ни позволява да четем "ιεʹ", но предпочита четенето "τὸ ιβʹ". 
+                            Кацаров потвърждава, че е "τὸ ιβʹ" с черта отгоре при Стайн, бел. 3, както се чете на камъка. </note></app>
+                        <app loc="8"><note xml:lang="bg" n="7">Иречек и Фукар са видяли ΑΥΤΟ на камъка, който сега е счупен.</note></app>
+                        <app loc="9"><note xml:lang="bg" n="8">Комод не е бил обяваван като император за 10-та година ("αὐτο- κράτορα τὸ ιʹ") и грешката е или на текстописеца или на каменоделеца. 
+                            Cравни Фукар , който посочва същата грешка в испанското издание CIL II, 1337 ( AE 2004, +00749);
+                            Кубичек смята, че може би има итацизъм; Стайн сравнява с издание на Ann. èp. 1910, 2, където пише "Imp. XV die 22 m. Aprili a. 191", като трябва да е "trib. pot. XVI".</note></app>
+                        <app loc="9"><note xml:lang="bg" n="9">На края: Дюмонт дава [τὸ εʹ]; Иречек и Фукар виждат τὸ εʹ; Калинка – τὸ [εʹ], при Михайлов същото е налично на камъка.</note></app>
+                        <app loc="10"><note xml:lang="bg" n="10">ΘΡ/// видяно от Дюмонт и Иречек, ΘΡΑΙ/// от Фукар, Θ/// от Калинка  и Михайлов.
+                            Според Михайлов  в камъка имало толкова [място] за написването на ΘΡΑ и няма място за издълбаването на букви ΚΩΝ. </note></app>
+                        <app loc="11"><note xml:lang="bg" n="11">ΚΛΙ и Κλ(αυδίου) дадени от Дюмонт, ΚΑΙ<g type="dot" ></g> Κ и Καί(ου) Κλ(αυδίου) дадено от Иречек, поправено от Фукар,
+                            Калинка напразно се съмнява; за името виж  А. Стайн и  Е. Гроаг.  </note></app>
+                       <app loc="16"> <note xml:lang="bg" n="12">Иречек го разчита, давайки погрешно черта над ΑΝΕ. </note></app>
+                    </seg>
+                    <seg xml:lang="en">
+                        <app loc="4"><note xml:lang="en" n="1">-σαρα [given by] Papadopoulos, ΣΑ/// [seen by] Foucart, ΣΑΡ/// [by] Jirechek. </note></app>
+                        <app loc="4,5"><note xml:lang="en" n="2">Αὐρήλ(ιον) on line 4 and Ἀντωνεῖνον on line 5 first given correctly by Foucart.</note></app>
+                        <app loc="6"><note xml:lang="en" n="3">ΣΑΡΜ [seen by] Jirechek, ΣΑΡΜ<gap reason="illegible" quantity="4" unit="character"></gap> Ν [seen by] Foucart, Mihaylov saw ΣΑΡ<unclear>ΜΑ</unclear></note></app>
+                        <app loc="7"><note xml:lang="en" n="4">There was  a leaf in the end of the line after ΑΡΧΙΕΡΕΑ , which is seen by Foucart and Jirechek, but Mihaylov only sees ΑΡΧΙΕΡΙ/// </note></app>
+                        <app loc="8"><note xml:lang="en" n="5">Jirechek reads δημ(οτικῆς), which is corrected by A. Dumont.</note></app>
+                        <app loc="8"><note xml:lang="en" n="6">Everyone reads "τὸ ιβʹ", except Jirechek, who gives "τόν β", and Kubitchek, who thinks that the portrayal of Kalinka allows us to also read "ιεʹ", but prefers the "τὸ ιβʹ" representation. 
+                            Kacarov assures that it is "τὸ ιβʹ" overlined in Stein, note 3, as it is in the stone.</note></app>
+                        <app loc="8"><note xml:lang="en" n="7">Jirechek and Foucart have seen ΑΥΤΟ in the stone, that is broken now. </note></app>
+                        <app loc="9"><note xml:lang="en" n="8">Commodus hasn't been declared emperor for a 10th year ("αὐτο- κράτορα τὸ ιʹ") and the mistake is either of the writer or of the stonecutter.
+                            Cf. Foucart, who points the same mistake in the spanish edition CIL II, 1337, (= A.E. 2004, +00749).
+                            Kubitchek believes, that itacism may be present. Stein compares with an edition of Ann. èp. 1910, 2, where it is written "Imp. XV die 22 m. Aprili a. 191" and the valid should be "trib. pot. XVI". </note></app>
+                        <app loc="9"><note xml:lang="en" n="9"> In the endDumont gives [τὸ εʹ]; Jirechek and Foucart see "τὸ εʹ " ; Kalinka sees τὸ [εʹ], during Mihaylov the same is present on the stone. </note></app>
+                        <app loc="10"><note xml:lang="en" n="10">ΘΡ/// seen by Dumont and Jirechek, ΘΡΑΙ/// by Foucart, Θ/// by Kalinka and Mihaylov. 
+                            According to Mihaylov in the stone there is enough space for writting only ΘΡΑ and not ΚΩΝ. </note></app>
+                        <app loc="11"><note xml:lang="en" n="11">ΚΛΙ and Κλ(αυδίου) given by Dumont, ΚΑΙ<g type="dot" ></g> Κ and Καί(ου) Κλ(αυδίου) given by Jirechek, corrected by Foucart,
+                            Kalinka doubts in vain, for the name see A. Stein and E Groag. </note></app>
+                        <app loc="16"><note xml:lang="en" n="12">Jirechek reads, erroneously giving ΑΝΕ an overbar. </note></app>
+                    </seg>
+                </p>
+            </div>
+            <div type="bibliography">
+                <p>
+                    <seg xml:lang="bg">
+                        <listBibl>
+                            <bibl xml:id="b3_2"><!-- стойността на атрибута да се замени със съответната стойност от авторитетния списък bibliography.xml -->
+                                <author>Георги Михайлов</author>.                                
+                                <date>1964</date>. 
+                                <title>Inscriptones Grecae in Bulgaria repertae</title>
+                                <biblScope unit="volume">III.2</biblScope>, <!-- да се попълни  -->
+                                <pubPlace>
+                                    <settlement>София</settlement>, 
+                                    <country>България</country>
+                                </pubPlace>
+                            </bibl>
+                        </listBibl>
+                    </seg>
+                    <seg xml:lang="en">
+                        <listBibl>
+                            <bibl>
+                                <author>Georgi Mihailov</author>, 
+                                <title>Inscriptones Grecae in Bulgaria repertae</title>
+                                <biblScope unit="volume">III.2</biblScope>, 
+                                <pubPlace>
+                                    <settlement>Sofia</settlement>
+                                    <country>Bulgaria</country>
+                                </pubPlace>, 
+                                <date>1964</date>
+                            </bibl>
+                        </listBibl>
+                    </seg>
+                </p>
+            </div>
+        </body>
+    </text>
+</TEI>

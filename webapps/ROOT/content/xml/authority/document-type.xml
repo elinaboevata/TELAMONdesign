@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?oxygen RNGSchema="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Controlled vocabulary for character of document</title>
+            </titleStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <list>
+                <item xml:id="doc1-1"> 
+                    <term xml:lang="bg">декрет на град</term>
+                    <term xml:lang="en">decree of city</term>
+                </item>
+                <item xml:id="doc1-2"> 
+                    <term xml:lang="bg">закон</term>
+                    <term xml:lang="en">law</term>
+                </item>
+                <item xml:id="doc1-3"> 
+                    <term xml:lang="bg">писмо на римски император</term>
+                    <term xml:lang="en">letter of Roman emperor</term>
+                </item>
+                <item xml:id="doc1-4"> 
+                    <term xml:lang="bg">документ на провинциалното управление</term>
+                    <term xml:lang="en">document of the provincial government</term>
+                </item>
+                <item xml:id="doc1-5"> 
+                    <term xml:lang="bg">публичен договор</term>
+                    <term xml:lang="en">treaty</term>
+                </item>
+                <item xml:id="doc1-6"> 
+                    <term xml:lang="bg">частен договор</term>
+                    <term xml:lang="en">contract</term>
+                </item>
+                <item xml:id="doc1-7"> 
+                    <term xml:lang="bg">завещание</term>
+                    <term xml:lang="en">will</term>
+                </item>
+                <item xml:id="doc1-8"> 
+                    <term xml:lang="bg">освобождаване на роби</term>
+                    <term xml:lang="en">manumission</term>
+                </item>
+                <item xml:id="doc1-9"> 
+                    <term xml:lang="bg">дарение</term>
+                    <term xml:lang="en">donation</term>
+                </item>
+                <item xml:id="doc2-1p">
+                    <term xml:lang="bg">почетен надпис за царе, императори, римски официални лица - в проза</term>
+                    <term xml:lang="en">honorary inscription for kings, emperors, Roman officials - prose</term>
+                </item>
+                <item xml:id="doc2-1v">
+                    <term xml:lang="bg">почетен надпис за царе, императори, римски официални лица - в стих</term>
+                    <term xml:lang="en">honorary inscription for kings, emperors, Roman officials - verse</term>
+                </item>
+                <item xml:id="doc2-2p">
+                    <term xml:lang="bg">почетен надпис за местни магистрати и жреци - в проза</term>
+                    <term xml:lang="en">honorary inscription for local magistrates and priests - prose</term>
+                </item>
+                <item xml:id="doc2-2v">
+                    <term xml:lang="bg">почетен надпис за местни магистрати и жреци - в стих</term>
+                    <term xml:lang="en">honorary inscription for local magistrates and priests - verse</term>
+                </item>
+                <item xml:id="doc2-3p">
+                    <term xml:lang="bg">почетен надпис за римска армия - в проза</term>
+                    <term xml:lang="en">honorary inscription for Roman army - prose</term>
+                </item>
+                <item xml:id="doc2-3v">
+                    <term xml:lang="bg">почетен надпис за римска армия - verse</term>
+                    <term xml:lang="en">honorary inscription for Roman army - verse</term>
+                </item>
+                <item xml:id="doc2-4p">
+                    <term xml:lang="bg">почетен надпис за частни лица - в проза</term>
+                    <term xml:lang="en">honorary inscription for private persons - prose</term>
+                </item>
+                <item xml:id="doc2-4v">
+                    <term xml:lang="bg">почетен надпис за частни лица - в стих</term>
+                    <term xml:lang="en">honorary inscription for private persons - verse</term>
+                </item>
+                <item xml:id="doc3-1p">
+                    <term xml:lang="bg">частен посветителен надпис - проза</term>
+                    <term xml:lang="en">private dedicatory inscription - prose</term>
+                </item>
+                <item xml:id="doc3-1v">
+                    <term xml:lang="bg">частен посветителен надпис - в стих</term>
+                    <term xml:lang="en">private dedicatory inscription - verse</term>
+                </item>
+                <item xml:id="doc3-2p">
+                    <term xml:lang="bg">публичен посветителен надпис - в проза</term>
+                    <term xml:lang="en">public dedicatory inscription - prose</term>
+                </item>
+                <item xml:id="doc3-2v">
+                    <term xml:lang="bg">публичен посветителен надпис - в стих</term>
+                    <term xml:lang="en">public dedicatory inscription - verse</term>
+                </item>
+                <item xml:id="doc4p">
+                    <term xml:lang="bg">надгробен надпис - в проза</term>
+                    <term xml:lang="en">funerary inscription - prose</term>
+                </item>
+                <item xml:id="doc4v">
+                    <term xml:lang="bg">надгробен надпис - в стих</term>
+                    <term xml:lang="en">funerary inscription - verse</term>
+                </item>
+                <item xml:id="doc5-1">
+                    <term xml:lang="bg">строителен надпис</term>
+                    <term xml:lang="en">building inscription</term>
+                </item>
+                <item xml:id="doc5-2">
+                    <term xml:lang="bg">милиарен надпис</term><!-- надпис върху милиарна колона? -->
+                    <term xml:lang="en">milestone inscription</term>
+                </item>
+                <item xml:id="doc5-3">
+                    <term xml:lang="bg">граница</term><!-- маркер за граница? -->
+                    <term xml:lang="en">boundary marker</term>
+                </item>
+                <item xml:id="doc5-5">
+                    <term xml:lang="bg">укрепление</term>
+                    <term xml:lang="en">fortification</term>
+                </item>
+                <item xml:id="doc5-6">
+                    <term xml:lang="bg">място в театри, амфитеатри, одеони, стадиони</term>
+                    <term xml:lang="en">theathre, amphitheatre, odeon, stadium seat</term>
+                </item>
+                <item xml:id="doc6-1">
+                    <term xml:lang="bg">мозайка</term>
+                    <term xml:lang="en">mosaic</term>
+                </item>
+                <item xml:id="doc6-2">
+                    <term xml:lang="bg">амфорен печат</term>
+                    <term xml:lang="en">amphora stamp</term>
+                </item>
+                <item xml:id="doc6-3">
+                    <term xml:lang="bg">надпис върху тухла/керемида</term>
+                    <term xml:lang="en">inscription on brick/tile</term>
+                </item>
+                <item xml:id="doc6-4">
+                    <term xml:lang="bg">графит/дипинт</term>
+                    <term xml:lang="en">graffito/dipinto</term>
+                </item>
+                <item xml:id="doc6-5">
+                    <term xml:lang="bg">знак на строител</term>
+                    <term xml:lang="en">stonemason's mark</term>
+                </item>
+                <item xml:id="doc6-6">
+                    <term xml:lang="bg">подпис на занаятчия</term>
+                    <term xml:lang="en">signature of artisan</term>
+                </item>
+                <item xml:id="doc6-7">
+                    <term xml:lang="bg">мерки и теглилки</term>
+                    <term xml:lang="en">weights and measures</term>
+                </item>
+                <item xml:id="doc6-8">
+                    <term xml:lang="bg">надпис върху метал</term>
+                    <term xml:lang="en">inscription on metal</term>
+                </item>
+                <item xml:id="doc6-9">
+                    <term xml:lang="bg">надпис върху гема</term>
+                    <term xml:lang="en">inscription on gem</term>
+                </item>
+                <item xml:id="doc7-1">
+                    <term xml:lang="bg">култов надпис за празници и игри</term>
+                    <term xml:lang="en">cult inscription for festivals and games</term>
+                </item>
+                <item xml:id="doc7-2">
+                    <term xml:lang="bg">магически надпис</term>
+                    <term xml:lang="en">magical inscription</term>
+                </item>
+                <item xml:id="doc7-3p">
+                    <term xml:lang="bg">оракул - в проза</term>
+                    <term xml:lang="en">оracle - prose</term>
+                </item>
+                <item xml:id="doc7-3v">
+                    <term xml:lang="bg">оракул - в стих</term>
+                    <term xml:lang="en">оracle - verse</term>
+                </item>
+                <item xml:id="doc7-4">
+                    <term xml:lang="bg">свещен закон</term>
+                    <term xml:lang="en">sacred law</term>
+                </item>
+                <item xml:id="doc8-1">
+                    <term xml:lang="bg">каталог - ефеби</term>
+                    <term xml:lang="en">catalogue - ephebes</term>
+                </item>
+                <item xml:id="doc8-2">
+                    <term xml:lang="bg">каталог - заселници</term>
+                    <term xml:lang="en">catalogue - settlers</term>
+                </item>
+                <item xml:id="doc8-3">
+                    <term xml:lang="bg">каталог - жреци и магистрати</term>
+                    <term xml:lang="en">catalogue - priests and magistrates</term>
+                </item>
+                <item xml:id="doc8-4">
+                    <term xml:lang="bg">каталог - религиозни общества</term>
+                    <term xml:lang="en">catalogue - religious societies</term>
+                </item>
+                <item xml:id="doc8-5">
+                    <term xml:lang="bg">каталог - други</term>
+                    <term xml:lang="en">catalogue - other</term>
+                </item>
+                <item xml:id="doc9-1">
+                    <term xml:lang="bg">акламация - eфеби</term><!-- благопожелателен надпис? -->
+                    <term xml:lang="en">acclamation - ephebes</term>
+                </item>
+                <item xml:id="doc9-2">
+                    <term xml:lang="bg">акламация - императори и официални лица</term>
+                    <term xml:lang="en">acclamation - emperors and officials</term>
+                </item>
+                <item xml:id="doc9-3">
+                    <term xml:lang="bg">акламация - божества</term>
+                    <term xml:lang="en">acclamation - deities</term>
+                </item>
+                <item xml:id="doc9-4">
+                    <term xml:lang="bg">акламация - други</term>
+                    <term xml:lang="en">acclamation - other</term>
+                </item>
+            </list>
+        </body>
+    </text>
+</TEI>

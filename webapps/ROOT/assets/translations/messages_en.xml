@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Example format for catalogue files. -->
+<catalogue xml:lang="en">
+  
+  <!-- Home page -->
+  <message key="home-title">Telamon</message>
+  <message key="home-welcome">Ancient Greek Inscriptions from Bulgaria</message>
+  <message key="home-inscriptions">Inscriptions</message>
+  <message key="home-inscriptions-info">List of currently encoded inscriptions.</message>
+  <message key="home-text"><p>The aim of the Telamon project, which is hosted by St. Kliment Ohridski Sofia University, 
+    Department of Classics, is to create a digital library of the ancient Greek inscriptions found in Bulgaria. Their total number 
+    counts more than 3500 written in a period of about 1000 years (6th century BC — 4th century AD). Georgi Mihailov publishes 
+    those that have been discovered up to the mid 80’s in Inscriptiones Graecae in Bulgaria repertae.</p> <p>The focus is currently on 
+    the digitilising the inscriptions of the most eminent poleis of the Roman Thrace, Philippopolis and Augusta Traiana. 
+    They are approximately 1600, 1200 of which are already included in IGBulg. A third of them, however, need some revision 
+    or correction, while other 400 are unpublished or published in dispersed and often inaccessible publications in Bulgarian. </p>
+<p>Therefore, we hope that the creating of an electronic database of these inscriptions will facilitate the study of the history, 
+    culture, and language both of the Bulgarian lands in antiquity and of the Greco-Roman civilization as a whole.</p>
+  </message>
+
+    <message key="home-conten">
+<div class="large-12 columns spase"><h1>Нашите партнъори</h1>
+    <div class="large-3 columns "><p>Софииски университет</p><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p>  </div>
+     <div class="large-3 columns "><p>Софииски университет</p><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p>  </div>
+    <div class="large-3 columns "><p>Софииски университет</p><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p>  </div>
+     <div class="large-3 columns "><p>Софииски университет</p><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p>  </div>
+</div>
+    <div class="large-12 columns gr spase"><h1>Екип</h1>
+    <div class="large-2 columns "><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p> <p>Пешо петров</p> </div>
+    <div class="large-2 columns "><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p> <p>Пешо петров</p> </div>
+    <div class="large-2 columns "><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p> <p>Пешо петров</p> </div>
+    <div class="large-2 columns "><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p> <p>Пешо петров</p> </div>
+    <div class="large-2 columns "><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p> <p>Пешо петров</p> </div>
+     <div class="large-2 columns "><p> <a href="#"> <img src="/assets/images/logo_pr.jpg" alt="Logo"/></a></p> <p>Пешо петров</p> </div>
+   </div>
+
+   <div class="large-12 columns spase"><h1>Контакти</h1>   
+     
+           
+    
+  </div>
+
+  </message>
+  
+  <!-- Menu labels -->
+  <message key="menu-inscriptions">Inscriptions</message>
+  <message key="menu-indices">Indices</message>
+  <message key="menu-index-abbreviation">Abbreviations</message>
+  <message key="menu-index-attested">Attested persons</message>
+  <message key="menu-index-divine">Divinities</message>
+  <message key="menu-index-emperors">Emperors</message>
+  <message key="menu-index-fragment">Fragments</message>
+  <message key="menu-index-lemma">Lemmata</message>
+  <message key="menu-index-localdivine">Local divinities</message>
+  <message key="menu-index-numeral">Numerals</message>
+  <message key="menu-index-officials">Officials</message>
+  <message key="menu-index-person_name">Personal names</message>
+  <message key="menu-index-symbol">Symbols</message>
+  <message key="menu-index-word">Words</message>
+  <message key="menu-search">Search</message>
+  <message key="menu-admin">Admin</message>
+  
+  <!-- Footer -->
+  <message key="footer-telamon">Telamon Project, 2018, University of Sofiа </message>
+   <message key="footer-license">Licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International</a></message>
+  
+  <!-- Facets -->
+  <message key="facet-found_provenance">Findspot</message>
+  <message key="facet-origin_place">Origin</message>
+  <message key="facet-support_material">Material</message>
+  <message key="facet-support_object_type">Object type</message>
+  <message key="facet-inscription_category">Category of inscription</message>
+ 
+  <!-- Inscriptions XSLT-->
+  <message key="epidoc-xslt-telamon-monument">Monument</message>
+  <message key="epidoc-xslt-telamon-monument-type">Type of monument</message>
+  <message key="epidoc-xslt-telamon-not-specified">Unknown</message>
+  <message key="epidoc-xslt-telamon-material">Material</message>
+  <message key="epidoc-xslt-telamon-find-place">Find place</message>
+  <message key="epidoc-xslt-telamon-modern-location">Modern location</message>
+  <message key="epidoc-xslt-telamon-dimensions">Dimensions</message>
+  <message key="epidoc-xslt-telamon-institution-inventory">Institution and inventory</message>
+  <message key="epidoc-xslt-telamon-letterheight">Letterheight</message>
+  <message key="epidoc-xslt-telamon-text">Text</message>
+  <message key="epidoc-xslt-telamon-category">Category</message>
+  <message key="epidoc-xslt-telamon-date">Date</message>
+  <message key="epidoc-xslt-telamon-dating-criteria">Dating criteria</message>
+  <message key="epidoc-xslt-iospe-apparatus">Apparatus</message>
+  <message key="epidoc-xslt-iospe-translation">Translation</message>
+  <message key="epidoc-xslt-iospe-commentary">Commentary</message>
+  <message key="epidoc-xslt-iospe-images">Images</message>
+  <message key="epidoc-xslt-inslib-diplomatic">Diplomatic</message>
+  <message key="epidoc-xslt-inslib-edition">Interpretive</message>
+  <message key="h">h.</message>
+  <message key="w">w.</message>
+  <message key="th">th.</message>
+  <message key=""></message>
+  <message key=""></message>
+  <message key=""></message>
+  <message key=""></message>
+  <message key=""></message>
+  <message key=""></message>
+</catalogue>

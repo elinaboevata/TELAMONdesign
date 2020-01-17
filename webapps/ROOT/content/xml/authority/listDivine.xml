@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <listPerson type="divinities">
+            <person xml:id="Hades">
+               <persName xml:lang="grc">ᾍδης</persName>
+               <persName xml:lang="en">Hades</persName>
+               <persName xml:lang="bg">Хадес</persName>
+            </person>
+            <person sameAs="#Hades">
+               <persName xml:lang="grc">Πλούτων</persName>
+               <persName xml:lang="en">Pluto</persName>
+               <persName xml:lang="bg">Плутон</persName>
+            </person>
+            <person xml:id="Helios">
+               <persName xml:lang="grc">Ἥλιος</persName>
+               <persName xml:lang="en">Helios</persName>
+               <persName xml:lang="bg">Хелиос</persName>
+            </person>
+            <person xml:id="Mithra">
+               <persName xml:lang="grc">Μίθρας</persName>
+               <persName xml:lang="en">Mithra</persName>
+               <persName xml:lang="bg">Хелиос</persName>
+            </person>
+            <person xml:id="Hera">
+               <persName xml:lang="grc">Ἥρα</persName>
+               <persName xml:lang="en">Hera</persName>
+               <persName xml:lang="bg">Хера</persName>
+            </person>
+            <person xml:id="Titidene" sameAs="Hera">
+               <persName xml:lang="grc">Τιδιτηνη</persName>
+               <persName xml:lang="en">Titidene</persName>
+               <persName xml:lang="bg">Хера</persName>
+            </person>
+            <person xml:id="Demetra">
+               <persName xml:lang="grc">Δημήτηρ</persName>
+               <persName xml:lang="en">Demetra</persName>
+               <persName xml:lang="bg">Деметра</persName>
+            </person>
+            <person xml:id="Persephone">
+               <persName xml:lang="grc">Περσεφόνη</persName>
+               <persName xml:lang="en">Persephone</persName>
+               <persName xml:lang="bg">Персефона</persName>
+            </person>
+            <person xml:id="Kore" sameAs="Persephone">
+               <persName xml:lang="grc">Κόρη</persName>
+               <persName xml:lang="en">Kore</persName>
+               <persName xml:lang="bg">Кора</persName>
+            </person>
+            <person xml:id="Zeus">
+               <persName xml:lang="grc">Ζεύς</persName>
+               <persName xml:lang="en">Zeus</persName>
+               <persName xml:lang="bg">Зевс</persName>
+            </person>
+            <person xml:id="Zbelsurd" sameAs="Zeus">
+               <persName xml:lang="grc">Ζβελσουρδος</persName>
+               <persName xml:lang="en">Zbelsurdus</persName>
+               <persName xml:lang="bg">Збелсурд</persName>
+            </person>
+            <person xml:id="Dionysus">
+               <persName xml:lang="grc">Διόνυσος</persName>
+               <persName xml:lang="en">Dionysus</persName>
+               <persName xml:lang="bg">Дионис</persName>
+            </person>
+            <person xml:id="Apollo">
+               <persName xml:lang="grc">Απόλλων</persName>
+               <persName xml:lang="en">Apollo</persName>
+               <persName xml:lang="bg">Аполон</persName>
+            </person>
+            <person sameAs="Apollo">
+               <persName xml:lang="grc">Φοῖβος</persName>
+               <persName xml:lang="en">Phoebos</persName>
+               <persName xml:lang="bg">Феб</persName>
+            </person>
+            <person sameAs="Apollo">
+               <persName xml:lang="grc">Παιάν</persName>
+               <persName xml:lang="en">Paean</persName>
+               <persName xml:lang="bg">Пеан</persName>
+            </person>
+            <person sameAs="Apollo">
+               <persName xml:lang="grc">Πύθιος</persName>
+               <persName xml:lang="en">Pythian</persName>
+               <persName xml:lang="bg">Питийски</persName>
+            </person>
+            <person xml:id="Kendriseus" sameAs="Apollo">
+               <persName xml:lang="grc">Κενδρεισος</persName>
+               <persName xml:lang="en">Kendriseus, Kendrisenus, Kendrisus</persName><!-- Kendrisus - 917, 918, 921; Kendreisenus - 919 -->
+               <persName xml:lang="bg">Кендрисос</persName>
+            </person>
+            <person xml:id="Zgoulamenus" sameAs="Apollo">
+               <persName xml:lang="grc">Ζγουλαμιηνος</persName>
+               <persName xml:lang="en">Zgoulamenus</persName>
+               <persName xml:lang="bg">Згуламенски</persName>
+            </person>
+            <person xml:id="Ares">
+               <persName xml:lang="grc">Ἄρης</persName>
+               <persName xml:lang="en">Ares</persName>
+               <persName xml:lang="bg">Арес</persName>
+            </person>
+            <person xml:id="Heracles">
+               <persName xml:lang="grc">Ἡρακλῆς</persName>
+               <persName xml:lang="en">Heracles</persName>
+               <persName xml:lang="bg"></persName>
+               <idno type="wp">https://en.wikipedia.org/wiki/Heracles</idno>
+            </person>
+            <person xml:id="Syria">
+               <persName xml:lang="grc">Συρία θεᾶ</persName>
+               <persName xml:lang="en">Dea Syria</persName>
+               <persName xml:lang="bg">Сирийската богиня</persName>
+               <idno type="wp">https://en.wikipedia.org/wiki/Atargatis</idno>
+            </person>
+            <person xml:id="Asclepius">
+               <persName xml:lang="grc">Ἀσκληπιός</persName>
+               <persName xml:lang="en">Asclepius</persName>
+               <persName xml:lang="bg"></persName>
+               <idno type="wp">https://en.wikipedia.org/wiki/Asclepius</idno>
+            </person>
+            <person xml:id="Zymzdrenus" sameAs="Asclepius">
+               <persName xml:lang="grc">Ζυμζδρηνος</persName>
+               <persName xml:lang="en">Zymzdrenus, Zymydrenus, Zymyzdrenus, Zysdrenus, Zylmyzdrenus, Zylmyzdienus</persName><!-- Zumzdrenus - 1133, 1117 Zymydrenus + HYGIA- 1140, Zymyzdrenus - 1126, Zysdrenus - 1132, Zylmyzdrenus - 1134, Zylmyzdienus - 1184-->
+               <persName xml:lang="bg">Зимздрен</persName>
+            </person>
+            <person xml:id="Rasyperenus" sameAs="Asclepius">
+               <persName xml:lang="grc">Ρασυπηρηνος</persName>
+               <persName xml:lang="en">Rasyperenus</persName>
+               <persName xml:lang="bg"></persName>
+            </person>
+            <person xml:id="Suregethes">
+               <persName xml:lang="grc">Σουρεγεθης</persName>
+               <persName xml:lang="en">Suregethes</persName>
+               <persName xml:lang="bg"></persName>
+            </person>
+            <person xml:id="Calchas">
+               <persName xml:lang="grc">Κάλχας</persName>
+               <persName xml:lang="en">Calchas</persName>
+               <persName xml:lang="bg">Калхант</persName>
+               <idno type="wp">https://en.wikipedia.org/wiki/Calchas</idno>
+            </person>
+            <person xml:id="Hygia">
+               <persName xml:lang="grc">Ὑγεία</persName>
+               <persName xml:lang="en">Hygia</persName>
+               <persName xml:lang="bg"></persName>
+               <idno type="wp">https://en.wikipedia.org/wiki/Hygieia</idno>
+            </person>
+            <person xml:id="Telesphorus">
+               <persName xml:lang="grc">Τελεσφόρος</persName>
+               <persName xml:lang="en">Telesphorus</persName>
+               <persName xml:lang="bg"></persName>
+               <idno type="wp">https://en.wikipedia.org/wiki/Telesphorus_(mythology)</idno>
+            </person>
+            <person xml:id="Mater">
+               <persName xml:lang="grc">Μήτηρ Θεῶν</persName>
+               <persName xml:lang="en">Mater deorum</persName>
+               <persName xml:lang="bg"></persName>
+               <idno type="wp">https://en.wikipedia.org/wiki/Rhea_(mythology)</idno>
+            </person>
+            <person xml:id="Polydamas">
+               <persName xml:lang="grc">Πολυδάμας</persName>
+               <persName xml:lang="en">Polydamas</persName>
+               <persName xml:lang="bg">Полидамант</persName>
+               <idno type="wp">https://en.wikipedia.org/wiki/Polydamas_(mythology)</idno>
+            </person>
+            <person xml:id="Halitherses">
+               <persName xml:lang="grc">Ἁλιθέρσης</persName>
+               <persName xml:lang="en">Halitherses</persName>
+               <persName xml:lang="bg">Халитерс</persName>
+               <idno type="wp">https://en.wikipedia.org/wiki/Halitherses</idno>
+            </person>
+            <person xml:id="Dzver">
+               <persName xml:lang="grc">Κανζουρηνος</persName>
+               <persName xml:lang="en">Kanzurinus</persName>
+               <persName xml:lang="bg">Кандзверин</persName>
+               <idno type="wp"></idno>
+            </person>
+            <person xml:id="Nymphs">
+               <persName xml:lang="grc">Νύμφαι</persName>
+               <persName xml:lang="en">Nymphs</persName>
+               <persName xml:lang="bg">Нимфи</persName>
+               <idno type="wp"></idno>
+            </person>
+               <person xml:id="Pourd-">
+                  <persName xml:lang="grc">Πουρδ--?</persName>
+                  <persName xml:lang="en">Pourd--?</persName>
+                  <persName xml:lang="bg">Пурд--?</persName>
+                  <idno type="wp"></idno>
+               </person>
+            <person xml:id="Moludases">
+               <persName xml:lang="grc">Μωλουδασης</persName>
+               <persName xml:lang="en">Moludases</persName>
+               <persName xml:lang="bg"></persName>
+               <idno type="wp"></idno>
+            </person>
+            <person xml:id="heros">
+               <persName xml:lang="grc">Ἥρως</persName>
+               <persName xml:lang="en">Heros</persName>
+               <persName xml:lang="bg"></persName>
+               <idno type="wp"></idno>
+            </person>
+            <person xml:id="Arzenus">
+               <persName xml:lang="grc">Αρ̣ζηνος</persName>
+               <persName xml:lang="en">Arzenus</persName>
+               <persName xml:lang="bg"></persName>
+               <idno type="wp"></idno>
+            </person>
+         </listPerson>
+      </body>
+  </text>
+</TEI>

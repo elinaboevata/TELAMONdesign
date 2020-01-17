@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="bg">Почетен надпис за Марк Аврелий и Луций Вер от Филиск и Гай</title>
+                <!-- Заглавие -->
+                <title xml:lang="en">Honorary inscription for Marcus Aurelius and Lucius Verus by Filiscus and
+                    Gaius</title>
+                <editor>
+                    <persName xml:lang="bg">Георги Михайлов</persName>
+                    <persName xml:lang="en">Georgi Mihailov</persName>
+                </editor>
+            </titleStmt>
+            <publicationStmt>
+                <authority>Telamon Project</authority>
+                <date>2019</date>
+                <idno type="filename">III.902</idno>
+                <!-- номер на надписа -->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <country>Bulgaria</country>
+                        <altIdentifier xml:lang="bg">
+                            <repository/>
+                            <!-- Институция -->
+                            <idno/>
+                            <!-- Инвентарен номер -->
+                        </altIdentifier>
+                        <altIdentifier xml:lang="en">
+                            <repository/>
+                            <idno/>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents>
+                        <!-- Жанр на надписа -->
+                        <summary corresp="document-type.xml#doc2-1p"><!-- добави в @corresp след # съответното id от document-type.xml -->
+                            <seg xml:lang="bg">почетен надпис за императори - проза</seg><!-- с думи -->
+                            <seg xml:lang="en">honorary inscription for emperors - prose</seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material xml:lang="bg" ref="material.xml#m">мрамор</material><!-- добави в @ref след # съответното id от material.xml; съдържание на елемента - с думи -->
+                                    <material xml:lang="en">marble</material>
+                                    <objectType xml:lang="bg" ref="object.xml#sl">плоча</objectType><!-- добави в @ref след # съответното id от object.xml; съдържание на елемента - с думи-->
+                                    <objectType xml:lang="en">slab</objectType>
+                                    <dimensions>
+                                        <!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                                        <height/>
+                                        <width/>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout/>
+                                <!-- трябва да добавим и специален таг за място на надписа върху обекта, който може и да не се пълни винаги ДИ -->
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <height/><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote>—</decoNote>
+                            <!-- попълни с описание на декорацията на обекта, ако е налично -->
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="origloc.xml#Phil"><!-- добави в @ref след # съответното id от origloc.xml; съдържание на елемента - с думи -->
+                                <seg xml:lang="bg">Филипопол</seg>
+                                <seg xml:lang="en">Philippopolis</seg>
+                            </origPlace>
+                            <origDate notBefore="0163" notAfter="0164" evidence="titulature"><!-- приема @notBefore заедно с @notAfter, ако имаме датировка по години на управление на император или посочен век (виж бележки как се бележат вековете), както и @when във формат година-месец-дата -->
+                                <seg xml:lang="bg">163-164 г. сл.Хр.</seg>
+                                <seg xml:lang="en">163-164 AD</seg>
+                            </origDate>
+                        </origin>
+                        <provenance type="found">
+                            <seg xml:lang="bg">
+                                <placeName type="ancientFindspot" ref="findsp.xml#Pl"
+                                    >Пловдив</placeName><!-- добави в @ref след # съответното id от findsp.xml; съдържание на елемента - с думи -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName type="ancientFindspot">Plovdiv</placeName>
+                            </seg>
+                        </provenance>
+                        <provenance type="observed">
+                            <seg xml:lang="bg"> вграден в църквата Света Петка Стара в
+                                    <placeName>Пловдив</placeName>, изчезнал.<!-- само с думи -->
+                                <!-- само с думи ли да остане наистина или да имаме референтен списък на места и тук? ДИ -->
+                            </seg>
+                            <seg xml:lang="en"> built in the church St. Petka the Old in
+                                    <placeName>Plovdiv</placeName>, now lost. </seg>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <listPrefixDef>
+                <prefixDef matchPattern="(.+)" replacementPattern="../authority/bibliography.xml#$1" ident="bib"/>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2019-06-14" who="Diana Zulcheva">encoded text of the inscription and known
+                information about it</change>
+            <change when="2019-06-18" who="EB">revised and corrected</change>
+            <!-- сложи @when с година-месец-ден и @who с инициали; като съдържание сложи описание на свършената от теб работа по надписа -->
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="именаснимка.jpeg"/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:lang="grc">
+                <ab>
+                    <lb n="1"/><w lemma="ἀγαθός">Ἁγαθῇ</w> <w lemma="τύχη">τύχῃ</w>.
+                    <lb n="2"/><w>Ὑπὲρ</w> <w>τῆς</w> <w>τῶν</w> <w lemma="αὐτοκράτωρ">αὐτοκρατόρων</w> <w lemma="νίκη">νίκης</w> <w>καὶ</w> <w lemma="αἰώνιος">αἰωνίου</w>
+                    <lb n="3"/><w lemma="διαμονή">διαμονῆς</w>
+                        <persName ref="listemperors.xml#MarcusAurelius" type="emperor">
+                            <name ref="Onom.xml#Marcus" nymRef="Μᾶρκος" type="praenomen"><expan><abbr>Μ</abbr><ex>άρκου</ex></expan></name>
+                            <name ref="Onom.xml#Aurelius" nymRef="Αὐρήλιος">Αὐρηλίου</name>
+                            <name ref="Onom.xml#Antoninus" nymRef="Ἀντωνίνος">Ἀντ
+                    <lb n="4" break="no"/>ωνείν<supplied reason="lost">ου</supplied></name></persName> <w>καὶ</w>
+                        <persName type="emperor" ref="listemperors.xml#LuciusVerus"> 
+                            <name ref="Onom.xml#Lucius" nymRef="Λουκίος"><expan><abbr>Λ</abbr><ex>ουκίου</ex></expan></name>
+                            <name ref="Onom.xml#Aurelius" nymRef="Αὐρήλιος">Αὐρηλίου</name>
+                            <name ref="Onom.xml#Verus" nymRef="Οὐῆρος">Οὐή
+                    <lb n="5" break="no"/>ρου</name></persName> <w lemma="Αρμενιάκος">Ἀρμενιακῶν</w>
+                        <persName>
+                            <name nymRef="Φιλίσκος" ref="Onom.xml#Filiscus">Φιλίσκος</name></persName> <w>καὶ</w> <!--ИМЕТО ФИЛИСК ГО НЯМА В АВТОРИТЕТНИЯ СПИСЪК-->
+                        <persName>
+                            <name ref="Onom.xml#Gaius" nymRef="Γάιος">Γάιος</name></persName> 
+                    <lb n="6"/><w>οἱ</w> <persName><name ref="Onom.xml#Marcus" nymRef="Μᾶρκος">Μάρκου</name></persName> <w>τῇ</w> <w lemma="φυλή">φυλῇ</w> <w>τῇ</w> <w lemma="ἱερός">ἱερᾷ</w> <w lemma="ἀνατίθημι">ἀ
+                    <lb n="7" break="no"/>νέθηκαν</w> <w>Ἀρτεμεισιάδι</w> <w>μετὰ</w> <w lemma="ἱερωσύνη">ἱε   <!--НЕ СЪМ СИГУРНА КАКВО Е Ἀρτεμεισιάδι В ТОЗИ НАДПИС. ИМЕТО НА ФИЛАТА?-->
+                    <lb n="8" break="no"/>ρωσύνην</w>, <g type="leaf"/> <w lemma="ἐκδικέω">ἐκδικοῦντος</w> 
+                        <persName type="attested" ref="listPers.xml#AT133">
+                            <name nymRef="Ἀλφεῖος" ref="Onom.xml#Alpheius">Ἀλφείου</name>
+                            <name ref="Onom.xml#Poseidonius" nymRef="Ποσειδώνιος">Πο <!-- И НЕ СЪМ НАПЪЛНО СИГУРНА ДАЛИ Е ТАКА УДАРЕНИЕТО В НОМИНАТИВ-->
+                    <lb n="9" break="no"/>σειδωνίου</name></persName>, <g type="leaf"/> <w lemma="ἐπιμελητεύω">ἐπιμελη
+                    <lb n="10" break="no"/>τεύοντος</w>
+                        <persName type="attested" ref="listPers.xml#AT134">
+                            <name nymRef="Φλαούιος" ref="Onom.xml#Flavius">Φλαουίου</name> 
+                            <name nymRef="Εὐδαίμων" ref="Onom.xml#Eudaimon">Εὐδαίμον
+                    <lb n="11" break="no"/>ος</name> <w>τοῦ</w> <w>καὶ</w> <name nymRef="Φλαουιανός" ref="Onom.xml#Flavianus">Φλαουιανοῦ</name></persName>. 
+                </ab>
+            </div>
+            <div type="apparatus">
+                <listApp>
+                    <app/>
+                </listApp>
+            </div>
+            <div type="translation">
+                <p>
+                    <seg xml:lang="bg"> Не е
+                        наличен.<!-- Съдържание по подразбиране, ако има превод - да се попълни тук -->
+                    </seg>
+                    <seg xml:lang="en"> Not available. </seg>
+                </p>
+            </div>
+            <div type="commentary">
+                <p>
+                    <seg xml:lang="bg"> Вероятно с IGBulg III.904 са част от един
+                        паметник.<!-- Съдържание по подразбиране, ако има коментар - да се попълни тук -->
+                    </seg>
+                    <seg xml:lang="en"> It's likely that this inscription and III.904 are a part of
+                        the same monument. </seg>
+                </p>
+            </div>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl sameAs="bib:b3_1"/>
+                </listBibl>
+            </div>
+        </body>
+    </text>
+</TEI>

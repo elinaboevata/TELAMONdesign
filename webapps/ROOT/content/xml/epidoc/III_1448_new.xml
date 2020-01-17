@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="bg">Надгробен надпис на Аврелия Кирила от Лаодикия, съпруга на строителя Евкладий</title><!-- Заглавие -->
+                <title xml:lang="en">Funerary inscription of Aurelia Cyrilla from Laodicia, wife of Eucladius the builder</title>
+                <editor>
+                    <persName xml:lang="bg">Георги Михайлов</persName>
+                    <persName xml:lang="en">Georgi Mihailov</persName>
+                </editor>
+            </titleStmt>            
+            <publicationStmt>
+                <authority>Telamon Project</authority>
+                <date>2019</date>
+                <idno type="filename">III.1448</idno><!-- номер на надписа -->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><country/> <!-- какво слагаме в първия идентификатор и в алт идентификатора? на едното място може би да отиде инв. номер от музея, но на кое? ДИ -->
+                        <altIdentifier  xml:lang="bg">
+                            <repository>Регионален археологически музей - Пловдив</repository><!-- Институция -->
+                            <idno>—</idno><!-- Инвентарен номер -->
+                        </altIdentifier>
+                        <altIdentifier xml:lang="en">
+                            <repository>Regional Archaeological Museum - Plovdiv</repository>
+                            <idno>—</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents><!-- Жанр на надписа -->
+                        <summary corresp="document-type.xml#doc4v"><!-- добави в @corresp след # съответното id от document-type.xml -->
+                            <seg xml:lang="bg">надгробен надпис - стих</seg><!-- с думи -->
+                            <seg xml:lang="en">funerary inscription - verse</seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material xml:lang="bg" ref="material.xml#m">мрамор</material><!-- добави в @ref след # съответното id от material.xml; съдържание на елемента - с думи -->  
+                                    <material xml:lang="en">marble</material>
+                                    <objectType xml:lang="bg" ref="object.xml#sl">плоча</objectType><!-- добави в @ref след # съответното id от object.xml; съдържание на елемента - с думи--> 
+                                    <objectType xml:lang="en">slab</objectType>
+                                    <dimensions><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                                        <height quantity="50">50</height>
+                                        <width quantity="135">135</width>
+                                        <depth quantity="12">12</depth>
+                                    </dimensions>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout xml:lang="bg">Стиховете са написани на лицевата страна на камъка, от дясната страна е дописан текст по-късно.</layout>
+                                <layout xml:lang="en">The verses are written on the facing side of the stone, there is a later added text on the right side.</layout><!-- трябва да добавим и специален таг за място на надписа върху обекта, който може и да не се пълни винаги ДИ -->
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <height atLeast="2.5" atMost="3">2.5 - 3</height><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote xml:lang="">Има орнаменти от лявата и от дясната страна.</decoNote>
+                            <decoNote xml:lang="">There are ornaments on the left and on the right of the inscription.</decoNote><!-- попълни с описание на декорацията на обекта, ако е налично -->
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="origloc.xml#"><!-- добави в @ref след # съответното id от origloc.xml; съдържание на елемента - с думи -->
+                                <seg xml:lang="bg"></seg>
+                                <seg xml:lang="en"></seg>
+                            </origPlace>
+                            <origDate><!-- приема @notBefore заедно с @notAfter, ако имаме датировка по години на управление на император или посочен век (виж бележки как се бележат вековете), както и @when във формат година-месец-дата -->
+                                <seg xml:lang="bg"></seg>
+                                <seg xml:lang="en"></seg>
+                            </origDate>
+                        </origin>
+                        <provenance type="found">
+                            <seg xml:lang="bg">
+                                <placeName type="ancientFindspot" ref="findsp.xml#Boljartsi">Болярци</placeName><!-- добави в @ref след # съответното id от findsp.xml; съдържание на елемента - с думи -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName  type="ancientFindspot">Boljarci</placeName><!-- https://www.geonames.org/733085/bolyartsi.html -->
+                            </seg>
+                        </provenance>
+                        <provenance type="observed">
+                            <seg xml:lang="bg">
+                                <placeName></placeName><!-- само с думи --> <!-- само с думи ли да остане наистина или да имаме референтен списък на места и тук? ДИ -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName></placeName>
+                            </seg>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <listPrefixDef>
+                <prefixDef matchPattern="(.+)" replacementPattern="../authority/bibliography.xml#$1" ident="bib"/>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2019-07-10" who="BI">вписах в кода информацията от сборника на Михайлов</change>
+            <change when="2019-08-02" who="E.B.">corrected, added links to authority</change><!-- сложи @when с година-месец-ден и @who с инициали; като съдържание сложи описание на свършената от теб работа по надписа -->
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="именаснимка.jpg"/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:lang="grc">
+                <div type="textpart" n="p1">
+                    <lg><l><lb n="1"/><w>εἰ</w> <w lemma="ἐγώ">μ’</w> <w lemma="ἐθέλω">ἐθέλις</w>, <w>ὦ</w> <w lemma="ξένος">ξεῖνε</w>, <w>δαήμενε</w><!-- НЕ ЗНАМ ТАЗИ ДУМА, НЯКАК ДА Е ДАЙМОН ТОВА, АМА НЕ МОГА ДРУГО ДА ПРЕДПОЛОЖА -->
+                    <lb n="2"/><w lemma="τίς">τίς</w>, <w lemma="πόθεν">πόθεν</w> <w lemma="εἰμί">εἰμεί</w>,</l> <l><placeName ref="listPlaces.xml#Laodicia">Λαδικίης</placeName><!-- https://pleiades.stoa.org/places/638955 -->
+                    <lb n="3"/><w lemma="πάτρις">πάτρις</w> <w lemma="εἰμί">εἰμί</w>, <w lemma="ὄνομα">τοὔνομα</w> <persName><name ref="Onom.xml#Cyrilla" nymRef="Κυρίλλα">Κυρίλλα</name></persName>,</l>
+                    <l><lb n="4"/><w lemma="οἰκόδομος">οἰκοδόμου</w> <w lemma="ἄλοχος">ἄλοχος</w>
+                    <lb n="5"/><!-- ПРЕД ЕВКЛАДИЙ СА ДВОЙНИТЕ ЧЕРТИ, КОИТО НЕ ЗНАМ КАКВО ЗНАЧАТ --><persName><name ref="Onom.xml#Eucladius" nymRef="Εὐκλάδιος">Εὐκλαδίου</name></persName>, <w lemma="ὅς">ὅς</w> <w lemma="ἐγώ">με</w> <w lemma="θνήσκω">θανοῦ
+                    <lb n="6" break="no"/>σαν</w></l> <l><w lemma="κρύπτω">ἔκρυψεν</w> <w lemma="ὅσιος">ὁσί<supplied reason="lost">ως</supplied></w>· <w><supplied reason="lost">τ</supplied>οῖς</w>
+                    <lb n="7"/><w lemma="λοιπός">λοιποῖς</w> <seg met="+---"><gap reason="lost" extent="unknown" unit="character"/></seg>.</l></lg>
+                    <!-- тук сложи гръцкия текст -->
+                </div>
+                <div type="textpart" n="p2">
+                    <ab>
+                    <lb n="8"/><persName><name ref="Onom.xml#Aurelia" nymRef="Αὐρηλία"><expan><abbr>Αὐρ</abbr><ex>ηλία</ex></expan></name> <name nymRef="Κυρήλα" ref="Onom.xml#Cyrilla">Κυρήλα</name></persName> <w lemma="χριστιανός">χρηστιανὴ</w>
+                    <lb n="9"/><w lemma="πιστός">πιστὴ</w> <w lemma="ἀείμνηστος">ἀείμνηστος</w>.
+                    </ab>
+                </div>
+            </div>
+            <div type="apparatus">
+                <listApp >
+                    <head xml:lang="bg">Букви в лигатура:</head><!-- В случай, че има коментари и от друг характер, да се промени съдържанието на елемента или да се добави нов елемент <head> -->
+                    <head xml:lang="en">Letters in ligature:</head>
+                    <app loc="1"><!-- стойността на атрибута да се замени със съответния ред, на който се среща лигатурата; елементът да се повтори толкова пъти, колкото реда с лигатури има -->
+                        <rdg></rdg>
+                    </app>
+                </listApp>
+            </div>
+            <div type="translation">
+                <!-- <p>
+                    <seg xml:lang="bg"></seg>
+                    <seg xml:lang="en"></seg>
+                </p> -->
+            </div>
+            <div type="commentary">
+                <p>
+                    <seg xml:lang="bg">Стихове 6 и 7 са много зле запазени и едвам се чете. В Мала Азия има много градове с името Λαοδίκεια, така че не се знае със сигурност за кое място става въпрос. Метърът е елегически дистихон, зле са написани стиховете. Предпредпоследната и предпоследната буква могат да бъдат Α/Λ/Δ и Σ/Ε и затова има предположения за [ἀπαγ]ο[ρ]ε[ύω] или [τ]οῖς φθιμ[έν]οις ν[όμος ὥς],но и двете се отхвърлят като невероятни. Името Кирила се появява два пъти върху паметника. Дум. Рапорт. (????) предполага, че това са две различни жени от едно семейство. Според Михайлов обаче Кирила е била публично езичник, но в личния си живот - християнин. Добавеният надпис вероятно е изписан от нейните роби, за което свидетелство е неграмотното изписване.</seg>
+                    <seg xml:lang="en">Verses 6 and 7 are very badly preserved and it's very tough to read. There are many towns called Λαοδίκεια in Mala Asia and so it's not clear what the place mentioned in the inscription. The meter is elegaic dystichon, the verses are badly composed. The second to last and first to last letter of the inscription could be Α/Λ/Δ and Σ/Ε and that's why the following have been suggested - [ἀπαγ]ο[ρ]ε[ύω] or [τ]οῖς φθιμ[έν]οις ν[όμος ὥς] but both have been disregarded due to incredibility. The name Cyrilla can be seen twice on the monument. Dum. Raport. (?????) suggests that this are two different women of the same family. According to Mihailov, however, Cyrilla has been a pagan to the public but a christian in her private life. The added inscription most probably has been incised by her slaves, the evidence for that is the unlearned writing.</seg>
+                </p>
+            </div>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl sameAs="bib:b3_1"/>
+                </listBibl>
+            </div>
+        </body>
+    </text>
+</TEI>

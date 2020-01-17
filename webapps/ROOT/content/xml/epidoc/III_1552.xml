@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="bg">Почетен надпис от Антипатър Аполоний за Комод, от Августа Траяна</title>
+                <title xml:lang="en">Honorary inscription from Antipatrus Apollonius for Commodus, found in Augusta Traiana</title>
+                <editor>
+                    <persName xml:lang="bg">Георги Михайлов</persName>
+                    <persName xml:lang="en">Georgi Mihailov</persName>
+                </editor> 
+            </titleStmt>            
+            <publicationStmt>
+                <authority>Telamon Project</authority>
+                <date>2018</date>
+                <idno type="filename">III.1552</idno>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><country/>
+                        <altIdentifier  xml:lang="bg">
+                            <repository>Национален археологически институт с музей</repository>
+                            <idno>1172</idno>
+                        </altIdentifier>
+                        <altIdentifier xml:lang="en">
+                            <repository>National Archeological Institute with Museum</repository>
+                            <idno>1172</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents>
+                        <summary corresp="document-type.xml#doc2-1p">
+                            <seg xml:lang="bg">почетен надпис за император - проза</seg>
+                            <seg xml:lang="en">honorary inscription for emperor - prose</seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material xml:lang="bg" ref="material.xml#l">варовик</material>
+                                    <material xml:lang="en">limestone</material>
+                                    <objectType xml:lang="bg" ref="object.xml#b">постамент</objectType>
+                                    <objectType xml:lang="en">base</objectType>
+                                    <dimensions>
+                                        <height quantity="175">175</height>
+                                        <width quantity="75">75</width>
+                                        <depth quantity="62">62</depth>
+                                    </dimensions>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout></layout>
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <height atLeast="3.0" atMost="3.5" unit="cm">3.0 - 3.5</height>
+                            </handNote>
+                        </handDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="origloc.xml#AugTr">
+                                <seg xml:lang="bg">Августа Траяна</seg>
+                                <seg xml:lang="en">Augusta Traiana</seg>
+                            </origPlace>
+                            <origDate notBefore="0186" notAfter="0187" evidence="prosopography">
+                                <seg xml:lang="bg">187 г. сл. Хр.</seg>
+                                <seg xml:lang="en">187 AD</seg>
+                            </origDate>
+                        </origin>
+                        <provenance type="found">
+                            <seg xml:lang="bg">Намерен в турското гробище на
+                                <placeName type="ancientFindspot" ref="findsp.xml#StZ">Стара Загора</placeName>
+                            </seg>
+                            <seg xml:lang="en">Found in the Turkish cemetery of
+                                <placeName  type="ancientFindspot" ref="findsp.xml#StZ">Stara Zagora</placeName>
+                            </seg>
+                        </provenance>
+                        <provenance type="observed">
+                            <seg xml:lang="bg">
+                                <placeName></placeName>
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName></placeName>
+                            </seg>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <listPrefixDef>
+                <prefixDef matchPattern="(.+)" replacementPattern="../authority/bibliography.xml#$1" ident="bib"/>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2018-06-13" who="EB">encoded</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="1552.jpg"/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:lang="grc">
+                <ab>
+                    <lb n="1"/> <w lemma="ἀγαθός">Ἀγαθῆι</w> <w lemma="τύχη">τύχῃ</w>. 
+                    <lb n="2"/> <w>Τὸν</w> <w lemma="θεῖος">θειότατον</w> <w>καὶ</w> <w lemma="μέγας">μέ
+                    <lb n="3" break="no"/>γιστ<unclear>ο</unclear>ν</w> <w lemma="αὐτοκράτωρ">αὐτοκράτορα</w> <w lemma="καῖσαρ">καί
+                    <lb n="4" break="no"/>σα<unclear>ρ</unclear><supplied reason="lost">α</supplied></w> 
+                    <persName ref="listemperors.xml#Commodus" type="emperor"><name ref="Onom.xml#Marcus" nymRef="Μᾶρκος"><expan><abbr>Μ</abbr><ex>ᾶρκον</ex></expan></name>
+                        <name nymRef="Αὐρήλιος" ref="Onom.xml#Aurelius"><expan><abbr>Αὐρήλ</abbr><ex>ιον</ex></expan></name> <name ref="Onom.xml#Commodus" nymRef="Κόμμοδος">Κόμμοδον</name>
+                        <lb n="5"/><name nymRef="Ἀντωνίνος" ref="Onom.xml#Antoninus">Ἀντωνεῖνον</name></persName> <w lemma="σεβαστός">σεβαστὸν</w>
+                    <lb n="6"/><w lemma="Γερμανικός">Γερμανικὸν</w> 
+                    <w lemma="Σαρματικός">Σαρμ<unclear>ατικ</unclear><supplied reason="lost">ὸ</supplied>ν</w>
+                    <lb n="7"/><w lemma="Βρεταννικός">Βρεταννικὸν</w> <w lemma="ἀρχιερεύς">ἀρχιερέα</w>
+                    <lb n="8"/><w lemma="μέγας">μέγιστον</w> 
+                    <w lemma="δημαρχικός"><expan><abbr>δημ</abbr><ex>αρχικῆς</ex></expan></w> 
+                    <w lemma="ἐξουσία"><expan><abbr>ἐξ</abbr><ex>ουσίας</ex></expan></w> 
+                    τὸ <num value="12">ιβ</num>, <w lemma="αὐτοκράτωρ">αὐτο          
+                   <lb n="9" break="no"/> κράτορα</w> <w>τὸ</w> <num value="10">ι</num>, 
+                    <w lemma="ὕπατος">ὕπατον</w> <w>τὸ</w> <num value="5">ε</num>, 
+                    <lb n="10"/><w lemma="πατήρ"><expan><abbr>π</abbr><ex>ατέρα</ex></expan></w> 
+                    <w lemma="πατρίς"><expan><abbr>π</abbr><ex>ατρίδος</ex></expan></w>, <w lemma="ἡγεμονεύω">ἡγεμονεύοντος</w> <w>τῆς</w> 
+                    <placeName type="ethnic"><expan><abbr>Θρᾳ</abbr><ex>κῶν</ex></expan></placeName>
+                    <lb n="11"/><w lemma="ἐπαρχεία">ἐπαρχείας</w> 
+                                           <persName ref="listemperors.xml#Caecilius" type="official"><name ref="Onom.xml#Caecilius" nymRef="Καικίλιος"><expan><abbr>Καικ</abbr><ex>ιλίου</ex></expan></name>
+                            <name nymRef="Ματέρνος" ref="Onom.xml#Maternus">Ματέρνου</name></persName>
+                    <lb n="12"/> <w lemma="πρεσβευτής"><expan><abbr>πρεσβ</abbr><ex>ευτοῦ</ex></expan></w>
+                            <w lemma="σεβαστός"><expan><abbr>σεβ</abbr><ex>αστοῦ</ex></expan></w> <w lemma="ἀντιστράτηγος">ἀντιστρατήγου</w>,
+                    <lb n="13"/><persName ref="listPers.xml#AT002" type="attested"><name ref="Onom.xml#Antipatrus" nymRef="Ἀντίπατρος">Ἀντίπατρος</name> 
+                        <persName ref="listPers.xml#AT023" type="attested"><name ref="Onom.xml#Apollonius" nymRef="Ἀπολλώνιος">Ἀπολλωνίου</name></persName></persName>
+                    <lb n="14"/> <w>τοῦ</w> <w lemma="ἀρχιερεύς">ἀρχιερέως</w> <num value="2">β</num>, 
+                    <w>κατὰ</w> <w lemma="ὑπόσχεσις">ὑπό
+                     <lb n="15" break="no"/>σχεσιν</w> <w>τοῦ</w> <w lemma="πατήρ">πατρὸς</w> <w>ἐκ</w> <w>τῶν</w> <w lemma="ἴδιος">ἰδί
+                     <lb n="16" break="no"/>ων</w> <w lemma="ποιέω">ποιήσας</w> <w lemma="ἀνίστημι">ἀνέστησεν</w>. 
+                </ab>
+            </div>
+            <div type="apparatus">
+                <listApp>
+                <app>
+                    <note xml:lang="en">
+                        Letters in ligature:
+                        2. νκ, με;
+                        4. ρη, μμ;
+                        5. ντ, νε;
+                        7. νν;
+                        8. με, ημ;
+                       10. μνε (with superscript ο), ντ, τησ;
+                        11. τε, ου;
+                        12. πρ, τηγ;
+                        13. ντ;
+                        14. ου;
+                        15. ντ;
+                        16. νπ, ησ, νε, τη.
+                    </note>
+                    <note xml:lang="bg">
+                        Букви в лигатура:
+                        2. νκ, με;
+                        4. ρη, μμ;
+                        5. ντ, νε;
+                        7. νν;
+                        8. με, ημ;
+                        10. μνε (с вписано отгоре о), ντ, τησ;
+                        11. τε, ου;
+                        12. πρ, τηγ;
+                        13. ντ;
+                        14. ου;
+                        15. ντ;
+                        16. νπ, ησ, νε, τη.
+                    </note>
+                    <rdg></rdg>
+                </app>
+            </listApp>
+            </div>
+            <div type="translation">
+                <!-- <p>
+                    <seg xml:lang="bg"></seg>
+                    <seg xml:lang="en"></seg>
+                </p> -->
+            </div>
+            <div type="commentary">
+                <!--  <p>
+                    <seg xml:lang="bg"></seg>
+                    <seg xml:lang="en"></seg>
+                </p> -->
+            </div>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl sameAs="bib:b3_2"/>
+                </listBibl>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Title</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Information about the source</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <listPlace>
+                <place xml:id="Discoduraterae">
+                    <placeName xml:lang="grc">Δισκοδουρατέραι</placeName>
+                    <placeName xml:lang="en">Discoduraterae</placeName>
+                    <placeName xml:lang="bg">Дискодуратере</placeName>
+                    <idno type="pleiades">https://pleiades.stoa.org/places/216803</idno>
+                </place>
+                <place xml:id="AugTr"><placeName xml:lang="grc">πόλις ἡ Τραιανέων</placeName>
+                <placeName xml:lang="en">Augusta Traiana</placeName>
+                    <placeName xml:lang="bg">Августа Траяна</placeName>
+                    <idno type="pleiades">https://pleiades.stoa.org/places/216731</idno>
+                </place>
+                <place xml:id="Burdapa">
+                    <placeName xml:lang="grc"></placeName>
+                    <placeName xml:lang="en">Burdapa</placeName>
+                    <placeName xml:lang="bg">Бурдапа</placeName>
+                    <idno type="pleiades">https://pleiades.stoa.org/places/501381</idno>
+                </place>
+                <place xml:id="Phil"><placeName xml:lang="grc">Φιλιππόπολις</placeName>
+                <placeName xml:lang="en">Philippopolis</placeName>
+                    <placeName xml:lang="bg">Филипопол</placeName>
+                    <idno type="pleiades">https://pleiades.stoa.org/places/216927</idno>
+                </place>
+                <place xml:id="Solun">
+                    <placeName xml:lang="grc">Θεσσαλονείκη</placeName>
+                    <placeName xml:lang="en">Thessaloniki</placeName>
+                    <placeName xml:lang="bg">Солун (Тесалоники)</placeName>
+                    <idno type="pleiades">https://pleiades.stoa.org/places/491741</idno>
+                </place>
+                <place xml:id="Serdica">
+                    <placeName xml:lang="grc">Σερδων</placeName>
+                    <placeName xml:lang="en">Serdica</placeName>
+                    <placeName xml:lang="bg">Сердика</placeName>
+                    <idno type="pleiades">https://pleiades.stoa.org/places/207439</idno>
+                </place>
+                <place xml:id="Eitrizene">
+                    <placeName xml:lang="grc">Ειτριζηνη</placeName>
+                    <placeName xml:lang="en">Eitrizene</placeName>
+                    <placeName xml:lang="bg"></placeName>
+                </place>
+                <place xml:id="Cillae">
+                    <placeName xml:lang="grc">Κελλαι</placeName>
+                    <placeName xml:lang="en">Cillae</placeName>
+                    <placeName xml:lang="bg"></placeName>
+                </place>
+                <place xml:id="Quirina">
+                    <placeName xml:lang="grc">Κυρείνα</placeName>
+                    <placeName xml:lang="en">Quirina</placeName>
+                    <placeName xml:lang="bg"></placeName>
+                    <idno type="pleiades">https://pleiades.stoa.org/places/954023893</idno>
+                </place>
+                <place xml:id="Roma">
+                    <placeName xml:lang="grc"></placeName>
+                    <placeName xml:lang="en">Rome</placeName>
+                    <placeName xml:lang="bg"></placeName>
+                    <idno type="pleiades">https://pleiades.stoa.org/places/423025</idno>
+                </place>
+                <place xml:id="Cyzicus">
+                    <placeName xml:lang="grc">Κύζικος</placeName>
+                    <placeName xml:lang="en">Cyzicus</placeName>
+                    <placeName xml:lang="bg"></placeName>
+                    <idno type="pleiades">https://pleiades.stoa.org/places/511218</idno>
+                </place>
+                <place xml:id="Pautalia">
+                    <placeName xml:lang="grc">Παυταλεωτῶν πόλις</placeName>
+                    <placeName xml:lang="en">Pautalia</placeName>
+                    <placeName xml:lang="bg"></placeName>
+                    <idno type="pleiades">https://pleiades.stoa.org/places/481949</idno>
+                </place>
+                <place xml:id="Kyme">
+                    <placeName xml:lang="grc">Κύμα</placeName>
+                    <placeName xml:lang="en">Kyme</placeName>
+                    <placeName xml:lang="bg"></placeName>
+                    <idno type="pleiades"></idno>
+                    <place xml:id="Asia">
+                        <placeName xml:lang="grc">Ἀσία</placeName>
+                        <placeName xml:lang="en">Asia</placeName>
+                        <placeName xml:lang="bg"></placeName>
+                        <idno type="pleiades">https://pleiades.stoa.org/places/981509</idno>
+                    </place>
+                    <place xml:id="Rhodope">
+                        <placeName xml:lang="grc">Ῥοδόπη</placeName>
+                        <placeName xml:lang="en">Rhodope</placeName>
+                        <placeName xml:lang="bg"></placeName>
+                        <idno type="pleiades">https://pleiades.stoa.org/places/991370</idno><!-- NOT AN ACTUAL MAP OF RHODOPE PROVINCE -->
+                    </place>
+                    <place xml:id="Thrace">
+                        <placeName xml:lang="grc">Θρᾴκη</placeName>
+                        <placeName xml:lang="en">Thrace</placeName>
+                        <placeName xml:lang="bg"></placeName>
+                        <idno type="pleiades">https://pleiades.stoa.org/places/981552</idno>
+                    </place>
+                    <place xml:id="Macedonia">
+                        <placeName xml:lang="grc">Μακεδονία</placeName>
+                        <placeName xml:lang="en">Macedonia</placeName>
+                        <placeName xml:lang="bg"></placeName>
+                        <idno type="pleiades">https://pleiades.stoa.org/places/981552</idno>
+                    </place>
+                    <place xml:id="Sardis">
+                        <placeName xml:lang="grc">Σάρδεις</placeName>
+                        <placeName xml:lang="en">Sardis</placeName>
+                        <placeName xml:lang="bg"></placeName>
+                        <idno type="pleiades">https://pleiades.stoa.org/places/550867</idno>
+                    </place>
+                    <place xml:id="Ravenna">
+                        <placeName xml:lang="grc">Ῥαουήννη</placeName>
+                        <placeName xml:lang="en">Ravenna</placeName>
+                        <placeName xml:lang="bg"></placeName>
+                        <idno type="pleiades">https://pleiades.stoa.org/places/393480</idno>
+                    </place>
+                    <place xml:id="Bendipara">
+                        <placeName xml:lang="grc">Βενδιπαρα</placeName>
+                        <placeName xml:lang="en">Bendipara</placeName>
+                        <placeName xml:lang="bg"></placeName>
+                        <idno type="pleiades"></idno>
+                    </place>
+                </place>
+            </listPlace>
+        </body>
+    </text>
+</TEI>
+
+

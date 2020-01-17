@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="bg">Посветителна плоча за Асклепий, Хигия и Телесфор от Синерос и Хермиона от Караново </title><!-- Заглавие -->
+                <title xml:lang="en">Dedicatory plate for Asclepius, Hygia and Telesphorus by Syneros and Hermione from Karanovo</title>
+                <editor>
+                    <persName xml:lang="bg">Георги Михайлов</persName>
+                    <persName xml:lang="en">Georgi Mihailov</persName>
+                </editor>
+            </titleStmt>            
+            <publicationStmt>
+                <authority>Telamon Project</authority>
+                <date>2019</date>
+                <idno type="filename">III.1669</idno><!-- номер на надписа -->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><country/> <!-- какво слагаме в първия идентификатор и в алт идентификатора? на едното място може би да отиде инв. номер от музея, но на кое? ДИ -->
+                        <altIdentifier  xml:lang="bg">
+                            <!-- Не съм сигурен дали е регионален. Няма сайт - така пише в гугъл. --><repository>Исторически музей - Нова Загора</repository><!-- Институция -->
+                            <idno>—</idno><!-- Инвентарен номер -->
+                        </altIdentifier>
+                        <altIdentifier xml:lang="en">
+                            <repository>Historicy Museum - Nova Zagora</repository>
+                            <idno>—</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents><!-- Жанр на надписа -->
+                        <summary corresp="document-type.xml#doc3-1p"><!-- добави в @corresp след # съответното id от document-type.xml -->
+                            <seg xml:lang="bg">Частен посветителен надпис - проза</seg><!-- с думи -->
+                            <seg xml:lang="en">Private dedicatory inscription - prose</seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material xml:lang="bg" ref="material.xml#m">мрамор</material><!-- добави в @ref след # съответното id от material.xml; съдържание на елемента - с думи -->  
+                                    <material xml:lang="en">marble</material>
+                                    <objectType xml:lang="bg" ref="object.xml#sl">плоча</objectType><!-- добави в @ref след # съответното id от object.xml; съдържание на елемента - с думи--> 
+                                    <objectType xml:lang="en">slab</objectType>
+                                    <dimensions><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                                        <height quantity="17">17</height>
+                                        <width quantity="16">16</width>
+                                        <depth quantity="2">2</depth>
+                                    </dimensions>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout>
+                                    <seg xml:lang="bg">Под и над анаглифа</seg>
+                                    <seg xml:lang="en">Below and above the anaglyph </seg>
+                                </layout> <!-- трябва да добавим и специален таг за място на надписа върху обекта, който може и да не се пълни винаги ДИ -->
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <height quantity="1">1</height><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote>
+                                <seg xml:lang="bg">Анаглиф с изображение на Асклепий, Хигия и Телесфор.</seg>
+                                <seg xml:lang="en">Anaglyph with depiction of Asclepius, Hygia and Telesphorus.</seg>
+                            </decoNote><!-- попълни с описание на декорацията на обекта, ако е налично -->
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="origloc.xml#"><!-- добави в @ref след # съответното id от origloc.xml; съдържание на елемента - с думи -->
+                                <seg xml:lang="bg"></seg>
+                                <seg xml:lang="en"></seg>
+                            </origPlace>
+                            <origDate><!-- приема @notBefore заедно с @notAfter, ако имаме датировка по години на управление на император или посочен век (виж бележки как се бележат вековете), както и @when във формат година-месец-дата -->
+                                <seg xml:lang="bg"></seg>
+                                <seg xml:lang="en"></seg>
+                            </origDate>
+                        </origin>
+                        <provenance type="found">
+                            <seg xml:lang="bg">
+                                <!-- https://www.geonames.org/730594/karanovo.html --> <placeName type="ancientFindspot" ref="findsp.xml#Karanovo">Караново</placeName><!-- добави в @ref след # съответното id от findsp.xml; съдържание на елемента - с думи -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName  type="ancientFindspot">Karanovo</placeName>
+                            </seg>
+                        </provenance>
+                        <provenance type="observed">
+                            <seg xml:lang="bg">
+                                <placeName></placeName><!-- само с думи --> <!-- само с думи ли да остане наистина или да имаме референтен списък на места и тук? ДИ -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName></placeName>
+                            </seg>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <listPrefixDef>
+                <prefixDef matchPattern="(.+)" replacementPattern="../authority/bibliography.xml#$1" ident="bib"/>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2019-07-26" who="M.Y.">До decoNote;  До края.</change>
+            <change when="2019-07" who="M.Y."></change>
+            <change when="2019-07" who="M.Y."></change>
+            <change when="2019-08-21" who="E.B.">corrected, added links to authority</change>
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="именаснимка.jpg"/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition"  xml:space="preserve" xml:lang="grc"><div  type="textpart" n="above" > <!-- Текстът не се "визуализира" в Ефес. --> 
+                <ab n="1"><!-- Τελεσφόρος=Telesphorus за listDivine.xml-->
+                    <lb n="1"/><persName type="divine" ref="listDivine.xml#Asclepius">Ἀσκληπιῷ</persName> <w>καὶ</w>
+                    <persName type="divine" ref="listDivine.xml#Hygia">Ὑγείᾳ</persName> <w>καὶ</w>
+                    <persName type="divine" ref="listDivine.xml#Telesphorus">Τελ<supplied reason="lost">εσφόρῳ</supplied></persName>
+                </ab>
+            </div>
+            <div  type="textpart" n="below">
+                <ab n="2"><!-- Συνέρως= Syneros, Ἑρμιόνη=Hermione за Onom.xml  -->
+                    <lb n="2"/><persName><name nymRef="Συνέρως" ref="Onom.xml#Synerus">Συνέρως</name></persName> <w>καὶ</w> <persName><name nymRef="Ἑρμιόνη" ref="Onom.xml#Hermione">Ἑρμιόνη</name></persName>
+                    <lb n="3"/> <w lemma="εὐχὴ">εὐχὴν</w> <w lemma="ἀνατίθημι">ἀνέθηκαν</w>.
+                </ab>
+            </div>
+            </div>
+            <div type="apparatus">
+                <listApp >
+                    <head xml:lang="bg">Букви в лигатура:</head><!-- В случай, че има коментари и от друг характер, да се промени съдържанието на елемента или да се добави нов елемент <head> -->
+                    <head xml:lang="en">Letters in ligature:</head>
+                    <app loc="1"><note>ηπ,ωκ,τε; </note></app>
+                    <app loc="2"><note>νε, ως;</note></app>
+                    <app loc="3"><note>ην, νε, ηκ.</note></app>
+                </listApp>
+            </div>
+            <div type="translation">
+                 <p>
+                    <seg xml:lang="bg">За Асклепий и Хигия и Телесфор || Синерос и Хермиона посветиха молитва.</seg>
+                    <seg xml:lang="en">For Asclepius and Hygia and Telesphorus || Syneros and Hermione dedicated a prayer.</seg>
+                </p> 
+            </div>
+            <div type="commentary">
+                  <p>
+                      <seg xml:lang="bg">1-ви ред: " Ἀσκλη" сега е счупено. </seg>
+                      <seg xml:lang="en">Line 1: "Ἀσκλη" is now broken.</seg>
+                </p> 
+            </div>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl sameAs="bib:b3_2"/><!-- след префикса bib: стойността на атрибута да се замени със съответната стойност от авторитетния списък bibliography.xml -->
+                </listBibl>
+            </div>
+        </body>
+    </text>
+</TEI>

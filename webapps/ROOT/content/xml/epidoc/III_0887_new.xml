@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.stoa.org/epidoc/schema/latest/tei-epidoc.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title xml:lang="bg">Надпис върху бял мрамор, споменаващ нечий син Полион</title><!--НЕ ЗНАМ КАКВО ДРУГО МОЖЕ ДА СЕ КАЖЕ ЗА НАДПИСА.-->
+                <title xml:lang="en">Inscription on white marble, mentioning somebody's son named Pollio</title>
+                <editor>
+                    <persName xml:lang="bg">Георги Михайлов</persName>
+                    <persName xml:lang="en">Georgi Mihailov</persName>
+                </editor>
+            </titleStmt>            
+            <publicationStmt>
+                <authority>Telamon Project</authority>
+                <date>2019</date>
+                <idno type="filename">III_0887</idno><!-- номер на надписа -->
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier><country>Bulgaria</country> 
+                        <altIdentifier  xml:lang="bg"> <!--НЕ СЕ ЗНАЕ-->
+                            <repository/><!-- Институция -->
+                            <idno>—</idno><!-- Инвентарен номер -->
+                        </altIdentifier>
+                        <altIdentifier xml:lang="en">
+                            <repository/>
+                            <idno>—</idno>
+                        </altIdentifier>
+                    </msIdentifier>
+                    <msContents><!-- Жанр на надписа -->
+                        <summary corresp="document-type.xml#"><!--НЕ СЕ ЗНАЕ-->
+                            <seg xml:lang="bg"></seg><!-- с думи -->
+                            <seg xml:lang="en"></seg>
+                        </summary>
+                    </msContents>
+                    <physDesc>
+                        <objectDesc>
+                            <supportDesc>
+                                <support>
+                                    <material xml:lang="bg" ref="material.xml#m">мрамор</material><!-- добави в @ref след # съответното id от material.xml; съдържание на елемента - с думи -->  
+                                    <material xml:lang="en">marble</material>
+                                    <objectType xml:lang="bg" ref="object.xml#"></objectType><!-- добави в @ref след # съответното id от object.xml; съдържание на елемента - с думи--> 
+                                    <objectType xml:lang="en"></objectType> <!--НЕ СЕ ЗНАЕ-->
+                                    <dimensions><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                                        <height/> <!--НЕ СЕ ЗНАЕ-->
+                                        <width/>
+                                        <depth/>
+                                    </dimensions>
+                                </support>
+                            </supportDesc>
+                            <layoutDesc>
+                                <layout></layout> <!-- трябва да добавим и специален таг за място на надписа върху обекта, който може и да не се пълни винаги ДИ -->
+                            </layoutDesc>
+                        </objectDesc>
+                        <handDesc>
+                            <handNote>
+                                <height/> <!--НЕ СЕ ЗНАЕ--><!-- само числова стойност като стойност на атрибута и като съдържание на елемента -->
+                            </handNote>
+                        </handDesc>
+                        <decoDesc>
+                            <decoNote>—</decoNote><!-- попълни с описание на декорацията на обекта, ако е налично -->
+                        </decoDesc>
+                    </physDesc>
+                    <history>
+                        <origin>
+                            <origPlace ref="origloc.xml#Phil"><!-- добави в @ref след # съответното id от origloc.xml; съдържание на елемента - с думи -->
+                                <seg xml:lang="bg">Филипопол</seg>
+                                <seg xml:lang="en">Philippopolis</seg>
+                            </origPlace>
+                            <origDate><!-- приема @notBefore заедно с @notAfter, ако имаме датировка по години на управление на император или посочен век (виж бележки как се бележат вековете), както и @when във формат година-месец-дата -->
+                                <seg xml:lang="bg"></seg>
+                                <seg xml:lang="en"></seg>
+                            </origDate>
+                        </origin>
+                        <provenance type="found">
+                            <seg xml:lang="bg">
+                                <placeName type="ancientFindspot" ref="findsp.xml#Pl">Пловдив</placeName><!-- добави в @ref след # съответното id от findsp.xml; съдържание на елемента - с думи -->
+                            </seg>
+                            <seg xml:lang="en">
+                                <placeName type="ancientFindspot">Plovdiv</placeName>
+                            </seg>
+                        </provenance>
+                        <provenance type="observed">
+                            <seg xml:lang="bg">
+                               Последно видян вграден в църквата Света Петка Стара в <placeName>Пловдив</placeName>, изчезнал.<!-- само с думи --> <!-- само с думи ли да остане наистина или да имаме референтен списък на места и тук? ДИ -->
+                            </seg>
+                            <seg xml:lang="en">
+                               Last seen built in the church St. Petka the Old in <placeName>Plovdiv</placeName>, disappeared.
+                            </seg>
+                        </provenance>
+                    </history>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <listPrefixDef>
+                <prefixDef matchPattern="(.+)" replacementPattern="../authority/bibliography.xml#$1" ident="bib"/>
+            </listPrefixDef>
+        </encodingDesc>
+        <revisionDesc>
+            <change when="2019-05-27" who="Diana Zulcheva">encoded text of the inscription and known information about it</change>
+            <change when="2019-06-18" who="EB">revised and corrected</change><!-- сложи @when с година-месец-ден и @who с инициали; като съдържание сложи описание на свършената от теб работа по надписа -->
+        </revisionDesc>
+    </teiHeader>
+    <facsimile>
+        <graphic url="именаснимка.jpeg"/>
+    </facsimile>
+    <text>
+        <body>
+            <div type="edition" xml:space="preserve" xml:lang="grc">
+                <ab>
+                    <lb n="1"/><w lemma="ἀγαθός">Ἀγαθῇ</w> <w lemma="τύχη">τύχῃ</w>.
+                    <lb n="2"/><orig>ΚΑΤ</orig><gap reason="lost"></gap><orig>ΙΟΥΥΑΝΙΣΥΤΟΥ</orig><gap reason="lost"></gap><orig>ΤΥ</orig><gap reason="lost"></gap>
+                    <lb n="3"/><w>τὸν</w> <w lemma="υἱός">υἱὸν</w>
+                    <persName><name ref="Onom.xml#Pollion" nymRef="Πώλλιων">Πωλλίωνα</name></persName><!--НЯМА ГО В АВТОРИТЕТНИЯ СПИСЪК И НЕ ЗНАМ ДАЛИ ТАМ Е УДАРЕНИЕТО В НОМИНАТИВ--> 
+                    <gap reason="lost"></gap><w lemma="φυλή">φυλὴ</w><gap reason="lost"></gap> 
+                <lb n="4" break="no"/><orig>πεις</orig>.<!-- ТОВА πεις Е В ИЗДАНИЕТО С МАЛКИ БУКВИ И Е ПРОДЪЛЖЕНИЕ НА ИЗГУБЕНА ГОРНА ДУМА. НЕ ЗНАМ КАКВО ДА ПРАВЯ С НЕГО -->
+                </ab>
+            </div>
+            <div type="apparatus">
+                <listApp><app/></listApp>
+            </div>
+            <div type="translation">
+                <p>
+                    <seg xml:lang="bg">
+                        Не е наличен.<!-- Съдържание по подразбиране, ако има превод - да се попълни тук -->
+                    </seg>
+                    <seg xml:lang="en">
+                        Not available.
+                    </seg>
+                </p>
+            </div>
+            <div type="commentary">
+                <p>
+                    <seg xml:lang="bg">
+                        Не е наличен.<!-- Съдържание по подразбиране, ако има коментар - да се попълни тук -->
+                    </seg>
+                    <seg xml:lang="en">
+                        Not available.
+                    </seg>
+                </p>
+            </div>
+            <div type="bibliography">
+                <listBibl>
+                    <bibl sameAs="bib:b3_1"/>
+                </listBibl>
+            </div>
+        </body>
+    </text>
+</TEI>
