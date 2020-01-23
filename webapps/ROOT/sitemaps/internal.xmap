@@ -2,7 +2,8 @@
 <map:sitemap xmlns:map="http://apache.org/cocoon/sitemap/1.0">
 
   <map:pipelines>
-    <map:pipeline internal-only="true">
+    
+    <map:pipeline internal-only="false">
       <!-- Process a TEI document prior to its use in another
            pipeline, normalising and annotating it as required.
 
@@ -48,8 +49,13 @@
       <map:match id="local-preprocess-epidoc-language"
                  pattern="epidoc/preprocess/language/*/**.xml">
         <map:generate src="../content/xml/epidoc/{2}.xml" />
+        <map:transform src="../stylesheets/epidoc/expand-references.xsl"/>
+        <map:transform type="xinclude"/>
         <map:transform src="../stylesheets/epidoc/prune-to-language.xsl">
           <map:parameter name="language" value="{1}" />
+        </map:transform>
+        <map:transform type="i18n">
+          <map:parameter name="locale" value="{1}" />
         </map:transform>
         <map:serialize type="xml" />
       </map:match>
@@ -67,6 +73,14 @@
           <map:parameter name="language" value="{1}" />
         </map:transform>
         <map:serialize type="xml" />
+      </map:match>
+      
+      <map:match id="extract-referenced-content" pattern="extract-referenced-content/**">
+        <map:generate src="../content/xml/{1}"/>
+        <map:transform src="../stylesheets/epidoc/extract-referenced-content.xsl">
+          <map:parameter name="id" value="{request-param:id}"/>
+        </map:transform>
+        <map:serialize type="xml"/>
       </map:match>
 
       <!-- Transform an EpiDoc document into an HTML fragment
